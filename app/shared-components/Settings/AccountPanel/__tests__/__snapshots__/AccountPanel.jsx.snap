@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/Settings/AccountPanel Snapshot tests with shallow AccountPanel component should render 1`] = `
+<div
+  className="AccountPanel d-flex flex-column"
+>
+  <div
+    className="AccountPanel__links d-flex"
+  >
+    <a
+      className="AccountPanel__linksInner d-flex"
+      href="undefined/register?utm_source=insightsapp"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Create Account
+    </a>
+  </div>
+  <div
+    className="AccountPanel__title"
+  >
+    Sign In
+  </div>
+  <form
+    className="AccountPanel__form d-flex flex-column"
+    onSubmit={[Function]}
+  >
+    <label
+      className="AccountPanel__inputLabel"
+    >
+      Email:
+      <input
+        autoComplete="off"
+        className="AccountPanel__inputField"
+        name="email"
+        onChange={[Function]}
+        pattern=".{1,}"
+        type="text"
+      />
+    </label>
+    <label
+      className="AccountPanel__inputLabel"
+    >
+      Password:
+      <input
+        autoComplete="off"
+        className="AccountPanel__inputField"
+        name="password"
+        onChange={[Function]}
+        pattern=".{1,}"
+        type="password"
+      />
+    </label>
+    <div
+      className="AccountPanel__buttonContainer d-flex"
+    >
+      <input
+        className="AccountPanel__button"
+        type="submit"
+        value="Sign In"
+      />
+    </div>
+  </form>
+  <div
+    className="AccountPanel__links d-flex centerAlign"
+  >
+    <div
+      className="AccountPanel__linksInner d-flex"
+      onClick={[Function]}
+    >
+      <p>
+        Forgot Password?
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/PageStats/ Snapshot tests with shallow PageStats component should render 1`] = `
+<div
+  className="PageStats__container"
+>
+  <div
+    className="PageStats d-flex align-items-center justify-content-around"
+  >
+    <div>
+      Trackers: 1
+    </div>
+    <div>
+      Tracker Requests: 0
+    </div>
+    <div>
+      Total Tracker Size: 0 B
+    </div>
+  </div>
+</div>
+`;

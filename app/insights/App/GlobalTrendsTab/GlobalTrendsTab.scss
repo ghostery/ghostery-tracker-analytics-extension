@@ -1,0 +1,67 @@
+@import '../../../utils/scss/color-variables.scss';
+
+.GlobalTrendsTab {
+  padding: 25px 0;
+  width: 954px;
+}
+
+.GlobalTrendsTab--opaqueBackground {
+  background-color: $opaque-background;
+}
+
+.GlobalTrendsTab__list {
+  width: 550px;
+}
+
+.GlobalTrendsTab__listHeader {
+  padding: 3px 15px 5px;
+}
+
+.GlobalTrendsTab__headerButton {
+  margin: 7px;
+  border: 1px solid $white;
+  border-radius: 2px;
+  width: 130px;
+  height: 28px;
+  font-size: 11px;
+  cursor: pointer;
+
+  &.active {
+    background-color: $ghosty-blue;
+    border: 1px solid $ghosty-blue;
+  }
+}
+
+.GlobalTrendsListItem__prevalence {
+  position: relative;
+  left: -8px;
+}
+
+.GlobalTrendsTab__stats {
+  width: 380px;
+}
+
+.GlobalTrendsTab__statDisplay {
+  padding: 3px 20px 1px;
+}
+
+.GlobalTrendsTab__statText {
+  margin: 0 0 15px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.GlobalTrendsTab__tableHeader {
+  background-color: $opaque-background;
+  padding: 10px;
+  width: 530px;
+  height: 15px;
+}
+
+.GlobalTrendsTab__tableHeaderContainer {
+  width: 500px;
+}
+
+.GlobalTrendsTab--marginRight {
+  margin-right: 10px;
+}

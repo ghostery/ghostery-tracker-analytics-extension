@@ -1,0 +1,50 @@
+/*!
+ * Panel UI CSS
+ *
+ * Insights by Ghostery
+ * https://www.ghostery.com/insights/
+ *
+ * Copyright 2019 Ghostery, Inc. All rights reserved.
+ * See https://www.ghostery.com/eula for license agreement.
+ */
+@import '../../../utils/scss/normalize.scss';
+@import '../../../utils/scss/overrides.scss';
+@import '../../../utils/scss/color-variables.scss';
+@import '../../../shared-components/Tooltips/tooltips.scss';
+
+#insights-content {
+  position: absolute;
+  background-image: $background-gradient-transparent;
+  width: 100%;
+  height: 100%;
+  font-family: OpenSans, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: $white;
+}
+
+.Panel__content {
+  width: 985px;
+  height: 300px;
+}
+
+.Panel__tabLink {
+  cursor: pointer;
+}
+
+.Panel__graphContainer {
+  margin-bottom: 15px;
+  height: 230px;
+}
+
+.Panel__graphContainer > * {
+  margin: 0 10px;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/LiveFreezeToggle/ Snapshot tests with shallow LiveFreezeToggle component should render 1`] = `
+<div
+  className="LiveFreezeToggle d-flex align-items-center"
+>
+  <p
+    className="LiveFreezeToggle__modeText"
+  >
+    Mode
+  </p>
+  <svg
+    className="LiveFreezeToggle__modeIndicator live"
+    height="14"
+    width="18"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="#00AEF0"
+    >
+      <path
+        d="M15.3.28a.769.769 0 0 0-1.144 0 .898.898 0 0 0 0 1.22c2.85 3.04 2.85 7.98 0 11.02a.898.898 0 0 0 0 1.22c.15.16.356.26.563.26a.72.72 0 0 0 .562-.26C18.77 10.02 18.77 3.98 15.3.28z"
+      />
+      <path
+        d="M12.619 3.12a.769.769 0 0 0-1.144 0 .898.898 0 0 0 0 1.22c1.369 1.46 1.388 3.86 0 5.32a.898.898 0 0 0 0 1.22c.15.16.356.26.563.26a.72.72 0 0 0 .562-.26c2.044-2.14 2.025-5.62.019-7.76zM3.844 1.5a.898.898 0 0 0 0-1.22.769.769 0 0 0-1.144 0c-3.469 3.7-3.469 9.74 0 13.44.15.16.356.26.563.26a.72.72 0 0 0 .562-.26.898.898 0 0 0 0-1.22C.994 9.48.994 4.54 3.844 1.5z"
+      />
+      <path
+        d="M6.506 4.34a.898.898 0 0 0 0-1.22.769.769 0 0 0-1.144 0c-2.006 2.14-2.006 5.62 0 7.76.15.16.357.26.563.26a.72.72 0 0 0 .563-.26.898.898 0 0 0 0-1.22c-1.35-1.46-1.35-3.86.018-5.32z"
+      />
+      <ellipse
+        cx="9"
+        cy="7"
+        rx="1.369"
+        ry="1.46"
+      />
+    </g>
+  </svg>
+  <Connect(ThemedToggle)
+    activeButton={0}
+    handleClick={[Function]}
+    tooltipPosition="bottom"
+    tooltipStrings={
+      Array [
+        "Stream data in real-time",
+        "Pause data streaming",
+      ]
+    }
+  >
+    <p>
+      Live
+    </p>
+    <p>
+      Freeze
+    </p>
+  </Connect(ThemedToggle)>
+</div>
+`;

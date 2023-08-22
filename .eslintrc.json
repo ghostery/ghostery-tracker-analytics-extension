@@ -1,0 +1,50 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "amd": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "globals": {
+    "chrome": true,
+    "t": true
+  },
+  "rules": {
+    "camelcase":[0],
+    "class-methods-use-this": [0],
+    "import/extensions": [1, { "jsx": "always", "json": "always" }],
+    "jsx-a11y/anchor-is-valid": [0],
+    "jsx-a11y/click-events-have-key-events": [0],
+    "jsx-a11y/label-has-associated-control": [0],
+    "jsx-a11y/label-has-for": [0],
+    "jsx-a11y/mouse-events-have-key-events": [0],
+    "jsx-a11y/no-noninteractive-element-interactions": [0],
+    "jsx-a11y/no-static-element-interactions": [0],
+    "max-len": [0],
+    "no-param-reassign": [2, { "props": false }],
+    "no-plusplus": [0],
+    "no-prototype-builtins": [0],
+    "no-restricted-syntax": [0],
+    "no-underscore-dangle": [0],
+    "arrow-parens": [ "error", "as-needed", { "requireForBlockBody": true }],
+    "object-curly-newline": [
+      "error", {
+        "ObjectExpression": { "minProperties": 6, "multiline": true, "consistent": true },
+        "ObjectPattern": { "minProperties": 6, "multiline": true, "consistent": true },
+        "ImportDeclaration": { "minProperties": 6, "multiline": true, "consistent": true },
+        "ExportDeclaration": { "minProperties": 6, "multiline": true, "consistent": true }
+      }
+    ],
+    "react/jsx-fragments": [2, "element"],
+    "react/jsx-props-no-spreading": [0]
+  }
+}

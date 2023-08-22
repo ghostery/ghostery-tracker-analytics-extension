@@ -1,0 +1,119 @@
+@import '../../../utils/scss/color-variables.scss';
+@import '../../../utils/scss/category-background-colors.scss';
+
+.GlobalTrendsListItem:last-of-type {
+  .GlobalTrendsListItem__header {
+    margin-bottom: 0;
+  }
+}
+
+.GlobalTrendsListItem__header {
+  margin-bottom: 3px;
+  background-color: $black;
+  padding: 10px;
+  cursor: pointer;
+
+  p {
+    margin: 0 20px;
+  }
+}
+
+.GlobalTrendsListItem__circle {
+  margin-right: 9px;
+  border-radius: 11px;
+  width: 11px;
+  height: 11px;
+}
+
+.GlobalTrendsListItem__star {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+}
+
+.GlobalTrendsListItem__trackingType {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.GlobalTrendsListItem__notDetectedText {
+  margin: 5px 0;
+  color: $ghosty-blue;
+}
+
+.GlobalTrendsListItem__trackingTypeText {
+  margin: 0 12px 0 15px;
+  font-size: 13px;
+  color: $ghosty-blue;
+}
+
+.GlobalTrendsListItem--largeFont {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 20px;
+  color: $ghosty-blue;
+}
+
+.GlobalTrendsListItem--smallFont {
+  margin-bottom: 0;
+  font-size: 10px;
+}
+
+.GlobalTrendsListItem--paddingZero {
+  padding: 0;
+}
+
+.GlobalTrendsListItem--paddingZeroTop {
+  padding: 1px 0 0;
+}
+
+.GlobalTrendsListItem--paddingZeroBottom {
+  padding: 0 0 2px;
+}
+
+.GlobalTrendsListItem--marginZero {
+  margin: 10px 0;
+}
+
+.GlobalTrendsListItem__expandedView {
+  display: none;
+
+  &.expanded {
+    padding: 10px 25px;
+    height: 250px;
+    display: block;
+  }
+}
+
+.GlobalTrendsListItem__leftSide {
+  margin-right: 30px;
+  height: 250px;
+}
+
+.GlobalTrendsListItem__noDataText {
+  margin: 0;
+  padding: 10px 0 0;
+  color: $ghosty-blue;
+
+  &.reduceTopPadding {
+    padding-top: 4px;
+  }
+
+  &.addBottomPadding {
+    padding-bottom: 32px;
+  }
+}
+
+.GlobalTrendsListItem__lineGraph {
+  margin-bottom: 30px;
+  width: 250px;
+  height: 60px;
+}
+
+.GlobalTrendsListItem__graphGroup {
+  padding-left: 12px;
+
+  > p {
+    margin: 0 0 5px;
+  }
+}

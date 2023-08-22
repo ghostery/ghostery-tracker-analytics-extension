@@ -1,0 +1,49 @@
+@import '../../../utils/scss/color-variables.scss';
+@import '../../../utils/scss/z-index-variables.scss';
+
+.PageNotScannedOverlay {
+  position: absolute;
+  z-index: $z-index-access-denied-overlay;
+  background-color: $opaque-background-darker;
+  width: 100%;
+  height: 100%;
+}
+
+.PageNotScannedOverlay__container {
+  margin-top: 140px;
+  text-align: center;
+}
+
+.PageNotScannedOverlay__logo {
+  position: absolute;
+  margin: -136px 0 0 -414px;
+
+  &.signedIn {
+    margin: -136px 0 0 -845px;
+  }
+}
+
+.PageNotScannedOverlay__image {
+  margin-bottom: 19px;
+}
+
+.PageNotScannedOverlay__header {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.PageNotScannedOverlay__text {
+  margin-bottom: 18px;
+  width: 358px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.56;
+  color: $white;
+}
+
+.PageNotScannedOverlay__link {
+  text-decoration: underline;
+  color: $white;
+  cursor: pointer;
+}

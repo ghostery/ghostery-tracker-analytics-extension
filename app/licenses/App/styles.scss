@@ -1,0 +1,59 @@
+/*!
+ * Licenses CSS
+ *
+ * Insights by Ghostery
+ * https://www.ghostery.com/insights/
+ *
+ * Copyright 2019 Ghostery, Inc. All rights reserved.
+ * See https://www.ghostery.com/eula for license agreement.
+ */
+@import '../../utils/scss/overrides.scss';
+@import '../../utils/scss/open-sans.scss';
+@import '../../utils/scss/color-variables.scss';
+
+$header-offset: 64px;
+$footer-offset: 40px;
+
+.Licenses {
+  background-image: $background-gradient;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  font-family: OpenSans;
+  font-weight: 400;
+  background-attachment: fixed;
+}
+
+.Licenses__header {
+  border-bottom: 1px solid  $medium-grey;
+  width: 100%;
+  height: $header-offset;
+}
+
+.Licenses__logo {
+  margin: 17px 0 0 22px;
+  padding: 0;
+}
+
+.Licenses__title {
+  margin: 19px 55px 0 0;
+  font-size: 20px;
+}
+
+.Licenses__list {
+  overflow-y: auto;
+  height: calc(100vh - #{$header-offset} - #{$footer-offset});
+}
+
+.Licenses__copyright {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $darker-grey;
+  height: $footer-offset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}

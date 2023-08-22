@@ -1,0 +1,38 @@
+@import '../../utils/scss/color-variables.scss';
+
+.LiveFreezeToggle {
+  position: relative;
+
+  &.disabled {
+    pointer-events: none;
+  }
+}
+
+.LiveFreezeToggle__modeText {
+  margin: 0 8px 0 14px;
+  font-size: 10px;
+  color: $ghosty-blue;
+}
+
+.LiveFreezeToggle__modeIndicator {
+  margin-right: 12px;
+  padding: 1px;
+
+  &.panel {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  &.live {
+    padding: 0;
+  }
+}
+
+.LiveFreezeToggle__greyOut {
+  position: absolute;
+  right: 0;
+  background-color: $opaque-background-half;
+  border-radius: 3px;
+  width: 96px;
+  height: 26px;
+}

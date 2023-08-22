@@ -1,0 +1,14 @@
+# ESLint Ignore
+
+## Unit Test Files
+*.test.js
+*.test.jsx
+*.jsx.snap
+**/__tests__/**
+
+## Precompiled
+build/
+dist/
+
+## Node Modules
+node_modules/

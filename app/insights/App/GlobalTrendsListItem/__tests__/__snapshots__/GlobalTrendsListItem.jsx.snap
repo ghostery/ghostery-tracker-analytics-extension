@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/insights/App/insights/GlobalTrendsListItem Snapshot tests with react-test-renderer GlobalTrendsListItem component should render 1`] = `
+<div
+  className="GlobalTrendsListItem"
+>
+  <div
+    className="GlobalTrendsListItem__header d-flex justify-content-between"
+    onClick={[Function]}
+  >
+    <Container
+      fluid={true}
+    >
+      <ForwardRef
+        className="GlobalTrendsListItem--paddingZeroTop"
+        noGutters={false}
+      >
+        <Col
+          className="GlobalTrendsListItem--paddingZeroBottom d-flex align-items-center"
+          sm={1}
+        >
+          <img
+            alt="Star Tracker"
+            className="GlobalTrendsListItem__star GlobalTrendsListItem--paddingZero"
+            onClick={[Function]}
+            src={
+              Array [
+                undefined,
+              ]
+            }
+          />
+        </Col>
+        <Col
+          className="GlobalTrendsListItem--paddingZero d-flex align-items-center justify-content-center"
+          sm={1}
+        >
+          <img
+            alt="No Data For This Tracker"
+            height="3"
+            src="/dist/images/app/small-bar.svg"
+            width="15"
+          />
+        </Col>
+        <Col
+          className="GlobalTrendsListItem--paddingZero"
+          sm={1}
+        />
+        <Col
+          className="GlobalTrendsListItem--paddingZero"
+          sm={5}
+        />
+        <Col
+          className="GlobalTrendsListItem--paddingZero d-flex flex-row align-items-center"
+          sm={4}
+        >
+          <div
+            className="GlobalTrendsListItem__circle advertising-testing"
+          />
+          <div
+            className="GlobalTrendsListItem--paddingZero"
+          />
+        </Col>
+      </ForwardRef>
+    </Container>
+  </div>
+  <div
+    className="GlobalTrendsListItem__expandedView"
+  >
+    <span
+      className="d-flex"
+    >
+      <span
+        className="GlobalTrendsListItem__leftSide d-flex flex-column justify-content-start"
+      >
+        <p>
+          Tracker Reach
+        </p>
+        <div
+          className="GlobalTrendsListItem__lineGraph d-flex justify-content-start align-items-center"
+        >
+          <img
+            alt="Tracker info line graph (traffic)"
+            height="33"
+            src="/dist/images/app/tracker-info-traffic.svg"
+            width="32"
+          />
+          <span
+            className="GlobalTrendsListItem__graphGroup d-flex flex-column justify-content-between"
+          >
+            <p
+              className="GlobalTrendsListItem--smallFont"
+            >
+              Web traffic that is tracked by name-testing
+            </p>
+            <p
+              className="GlobalTrendsListItem__noDataText"
+            >
+              Data not yet available
+            </p>
+          </span>
+        </div>
+        <div
+          className="GlobalTrendsListItem__lineGraph d-flex justify-content-start align-items-center"
+        >
+          <img
+            alt="Tracker info line graph (sites)"
+            height="33"
+            src="/dist/images/app/tracker-info-site.svg"
+            width="32"
+          />
+          <span
+            className="GlobalTrendsListItem__graphGroup d-flex flex-column justify-content-between"
+          >
+            <p
+              className="GlobalTrendsListItem--smallFont"
+            >
+              Sites using the name-testing tracker
+            </p>
+            <p
+              className="GlobalTrendsListItem__noDataText"
+            >
+              Data not yet available
+            </p>
+          </span>
+        </div>
+        <p
+          className="GlobalTrendsListItem--smallFont"
+        />
+      </span>
+      <span
+        className="GlobalTrendsListItem__rightSide d-flex flex-column justify-content-start"
+      >
+        <p>
+          Seen On These Types Of Websites
+        </p>
+        <p
+          className="GlobalTrendsListItem__noDataText reduceTopPadding addBottomPadding"
+        >
+          Data not yet available
+        </p>
+        <p
+          className="GlobalTrendsListItem--marginZero"
+        >
+          Tracking Methods
+        </p>
+        <p
+          className="GlobalTrendsListItem__noDataText reduceTopPadding"
+        >
+          Data not yet available
+        </p>
+      </span>
+    </span>
+  </div>
+</div>
+`;

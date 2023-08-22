@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/infoCenter/App Snapshot tests with react-test-renderer App entry point component should render 1`] = `
+<div
+  className="InfoCenter__container d-flex justify-content-center"
+>
+  <img
+    alt="Background"
+    className="InfoCenter__backgroundCurve show"
+    src="/dist/images/info-center/background-curve.svg"
+  />
+  <div
+    className="InfoCenter__content d-flex"
+  >
+    <NavbarBrand
+      className="InfoCenter__logo"
+      href="https://www.ghostery.com/products/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Insights by Ghostery Icon"
+        src="/dist/images/logo-icons/insights-white-text-beta.svg"
+      />
+    </NavbarBrand>
+    <ThemedTabs
+      altTabs={true}
+      mountOnEnter={false}
+      passedSelectHandler={[Function]}
+      stickyNavItems={true}
+      tabs={
+        Array [
+          Object {
+            "title": "Product Tour",
+            "view": <ProductTour
+              toggleBackgroundCurve={[Function]}
+            />,
+          },
+          Object {
+            "title": "Glossary",
+            "view": <Glossary />,
+          },
+        ]
+      }
+    />
+  </div>
+</div>
+`;

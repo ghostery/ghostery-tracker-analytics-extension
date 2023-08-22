@@ -1,0 +1,52 @@
+@import '../../utils/scss/color-variables.scss';
+
+.TrackerDistributionGraph__container {
+  position: relative;
+}
+
+.TrackerDistributionGraph__xAxis {
+  path {
+    stroke: none;
+  }
+}
+
+.TrackerDistributionGraph__yAxis {
+  text {
+    transform: translate(-5px, 0);
+  }
+}
+
+.TrackerDistributionGraph__xAxis.small {
+  text {
+    display: none;
+  }
+}
+
+.TrackerDistributionGraph__yAxis.small {
+  text {
+    display: none;
+  }
+}
+
+.TrackerDistributionGraph__gridlines {
+  path {
+    stroke: none;
+  }
+}
+
+.TrackerDistributionGraph__emptyState {
+  position: absolute;
+  top: 0;
+  background-color: $opaque-background-half;
+
+  p {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &.small > p {
+    font-size: 11px;
+  }
+}

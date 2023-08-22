@@ -1,0 +1,45 @@
+@import '../../utils/scss/color-variables.scss';
+
+.ThemedLegend {
+  margin-left: 10px;
+}
+
+.ThemedLegend__keyContainer {
+  margin: 0 5px;
+
+  div,
+  span {
+    margin: 0 3px;
+  }
+}
+
+.ThemedLegend__keyIcon {
+  opacity: .7;
+  width: 9px;
+  height: 9px;
+
+  &.green {
+    background-color: $info-green;
+  }
+
+  &.yellow {
+    background-color: $info-yellow;
+  }
+
+  &.red {
+    background-color: $info-red;
+  }
+
+  &.pageEvent {
+    background-color: $ghosty-blue;
+    width: 1px;
+  }
+
+  &.ThemedLegend--marginTop {
+    margin-top: 2px;
+  }
+}
+
+.ThemedLegend__keyText {
+  font-size: 10px;
+}

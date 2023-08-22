@@ -1,0 +1,50 @@
+// CSS template for the SearchInput component
+
+// Do not use this stylesheet directly.
+// Instead, add the corresponding styles to the client component's stylesheet,
+// replacing 'SearchInputDefault' with a custom prefix,
+// resulting in class names like 'TrackerListHeader__searchInputContainer'.
+// That prefix should be passed into the component as the value of the 'cssPrefix' prop.
+// This allows the component to be re-skinned as needed while reusing its UX logic.
+
+// top level container
+
+.SearchInputDefault__search {}
+
+// the text label displayed to the left of the search input
+// optional
+
+.SearchInputDefault__searchLabel {}
+
+// container for the search input, the icons, and the dropdown
+
+.SearchInputDefault__searchInputContainer {}
+
+// the actual <input> element
+
+.SearchInputDefault__searchInput {
+  &:hover {}
+
+  &:focus {}
+}
+
+// search icon, e.g. a magnifying glass
+// optional
+
+.SearchInputDefault__searchIcon {}
+
+// X icon that clears the search input on click
+
+.SearchInputDefault__searchXIcon {}
+
+// dropdown container
+
+.SearchInputDefault__searchDropdown {}
+
+.SearchInputDefault__searchDropdownItem {
+  &.selected {}
+
+  &:hover {}
+
+  > .exact-substring-match {}
+}

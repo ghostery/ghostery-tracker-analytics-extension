@@ -1,0 +1,89 @@
+@import '../../utils/scss/color-variables.scss';
+@import '../../utils/scss/z-index-variables.scss';
+
+.StandAloneGraph__background {
+  position: relative;
+  background-color: $opaque-background;
+}
+
+.StandAloneGraph__blueStripe {
+  background-color: $ghosty-blue;
+  width: 3px;
+}
+
+.StandAloneGraphHeader__mainInfo {
+  width: 100%;
+  height: 70px;
+
+  p {
+    margin-left: 20px;
+  }
+
+  &.small {
+    width: 220px;
+    height: 40px;
+  }
+
+  &.small > div > div > h3 {
+    margin-left: 10px;
+    font-size: 11px;
+  }
+}
+
+.StandAloneGraphHeader__header {
+  margin: 10px 0 12px;
+
+  h3 {
+    margin: 0 8px 0 20px;
+  }
+}
+
+.StandAloneGraphHeader__arrows {
+  position: relative;
+  top: -1px;
+  right: 16px;
+  width: 17px;
+  height: 12px;
+  cursor: pointer;
+
+  &.StandAloneGraphHeader__collapse {
+    width: 23px;
+  }
+
+  &:hover path {
+    fill: $ghosty-blue;
+  }
+}
+
+.StandAloneGraphHeader__keyData {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 11px;
+  color: $ghosty-blue;
+
+  p {
+    margin: 0;
+    text-align: right;
+  }
+
+  &.small {
+    margin-right: 10px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+#StandAloneGraphHeader__smallSubHeader {
+  font-size: 11px;
+}
+
+.StandAloneGraphHeader__seeDetailsLink {
+  position: absolute;
+  z-index: $z-index-see-details-link;
+  bottom: 3px;
+  right: 5px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 10px;
+  color: $white;
+}

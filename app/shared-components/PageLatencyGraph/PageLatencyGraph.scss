@@ -1,0 +1,29 @@
+@import '../../utils/scss/color-variables.scss';
+
+.PageLatencyGraph__yAxis {
+  path {
+    stroke: none;
+  }
+}
+
+.PageLatencyGraph__gridlines {
+  path {
+    stroke: none;
+  }
+}
+
+.PageLatencyGraph__xAxis.small {
+  text {
+    display: none;
+  }
+}
+
+.PageLatencyGraph__yAxis.small {
+  text {
+    font-size: 8px;
+  }
+}
+
+.PageLatencyRect:hover {
+  fill: $ghosty-blue;
+}

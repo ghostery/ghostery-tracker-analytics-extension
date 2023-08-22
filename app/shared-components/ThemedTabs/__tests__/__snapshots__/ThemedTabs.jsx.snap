@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/ThemedTabs/ Snapshot tests with shallow ThemedTabs component should render 1`] = `
+<div
+  className="ThemedTabs--reg"
+>
+  <ForwardRef
+    activeKey={1}
+    className="ThemedTabs__tab"
+    mountOnEnter={false}
+    onSelect={[Function]}
+    unmountOnExit={true}
+  >
+    <div
+      className="d-flex"
+    >
+      <div
+        className="ThemedTabs__whiteLine flex-grow-1"
+      />
+      <Nav
+        fill={false}
+        justify={false}
+      >
+        <NavItem
+          className="ThemedTabs__tab d-flex justify-content-center align-items-center"
+          key="tabs.title"
+        >
+          <NavLink
+            active={true}
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "displayName": "SafeAnchor",
+                "render": [Function],
+              }
+            }
+            className="ThemedTabs__tabNavLink inLastTab"
+            disabled={false}
+            eventKey={1}
+          >
+            <div
+              className="ThemedTabs__tabLabel inActiveTab inLastTab"
+            >
+              tabs.title
+            </div>
+          </NavLink>
+        </NavItem>
+      </Nav>
+      <div
+        className="ThemedTabs__whiteLine flex-grow-1"
+      />
+    </div>
+    <Bootstrap(TabContent)>
+      <TabPane
+        active={false}
+        eventKey={1}
+        key="tabs.title"
+      >
+        <div
+          active={false}
+        >
+          fake tabs.view element
+        </div>
+      </TabPane>
+    </Bootstrap(TabContent)>
+  </ForwardRef>
+</div>
+`;

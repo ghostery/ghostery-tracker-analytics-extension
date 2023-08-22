@@ -1,0 +1,109 @@
+@import '../../../utils/scss/color-variables.scss';
+
+.Glossary {
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.Glossary__header {
+  margin: 30px 300px 40px 0;
+  width: 450px;
+
+  > p {
+    line-height: 30px;
+  }
+}
+
+.Glossary__content {
+  position: sticky;
+  top: 60px;
+  overflow-y: scroll;
+  height: calc(100vh - 60px);
+}
+
+.Glossary__index {
+  position: sticky;
+  top: 0;
+  margin: 0 80px 0 0;
+  padding-top: 20px;
+  width: 48px;
+  align-self: flex-start;
+}
+
+.Glossary__indexItem {
+  margin: 0;
+  padding: 2px 3px;
+  width: 10px;
+  font-weight: 600;
+  font-size: 16px;
+
+  &:not(.active) {
+    color: $opaque-background-white;
+    pointer-events: none;
+  }
+
+  &.active {
+    cursor: pointer;
+  }
+
+  &.active:hover {
+    color: $ghosty-blue;
+  }
+
+  &.current {
+    color: $ghosty-blue;
+  }
+}
+
+.Glossary__entries {
+  padding-right: 50px;
+  width: 650px;
+}
+
+.Glossary__entry {
+  > h2 {
+    margin-left: 30px;
+  }
+
+  > p {
+    line-height: 23px;
+  }
+
+  > p > span {
+    cursor: pointer;
+  }
+}
+
+.Glossary__termDivider {
+  margin: 45px 0 10px;
+  background-color: $opaque-background-white;
+  width: 600px;
+  height: 1px;
+}
+
+.Glossary__disclaimer {
+  margin-top: 70px;
+  margin-bottom: calc(100vh - 280px);
+
+  > p {
+    margin: 0;
+    line-height: 23px;
+  }
+}
+
+.Glossary__disclaimer > p > a {
+  font-size: 14px;
+
+  &:link {
+    color: $ghosty-blue;
+  }
+
+  &:active,
+  &:visited {
+    color: $medium-grey;
+  }
+
+  &:hover {
+    color: $white;
+  }
+}

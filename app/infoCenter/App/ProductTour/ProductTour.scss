@@ -1,0 +1,158 @@
+@import '../../../utils/scss/color-variables.scss';
+
+.ProductTour {
+  margin: 30px 0 100px;
+}
+
+.ProductTour__featureContainer > p {
+  margin-bottom: 70px;
+  width: 400px;
+  line-height: 30px;
+}
+
+.ProductTour__feature {
+  margin-bottom: 15px;
+  width: 350px;
+}
+
+.ProductTour__featureHeader {
+  background-color: $opaque-background-medium;
+  padding: 9px 12px;
+  cursor: pointer;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.ProductTour__caret {
+  width: 9px;
+  height: 5px;
+
+  &.flipped {
+    transform: rotate(180deg);
+  }
+}
+
+.ProductTour__featureDescription {
+  background-color: $opaque-background-white-lighter;
+
+  > div {
+    padding: 1px 20px;
+  }
+
+  > div > p {
+    line-height: 23px;
+  }
+}
+
+.ProductTour__imageContainer {
+  margin-top: 20px;
+  width: 450px;
+  height: 550px;
+  transition: margin-top .3s;
+
+  &.addMarginTop {
+    margin-top: 210px;
+  }
+}
+
+.ProductTour__imageDisplay {
+  position: absolute;
+  opacity: 0;
+  width: 450px;
+  height: 550px;
+  pointer-events: none;
+  transition: opacity .3s;
+
+  &.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  > img {
+    object-fit: contain;
+    width: 450px;
+    height: 550px;
+    transition: height .3s;
+  }
+
+  &.liveFreezeSize > img {
+    height: 513px;
+  }
+}
+
+.ProductTour__pulsarContainer {
+  position: relative;
+}
+
+.ProductTour__pulsar {
+  position: absolute;
+  background-color: $opaque-pulsar-purple;
+  border-radius: 20px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  animation: borderPulse 2s ease infinite;
+
+  &.imageTwoPulsarZero {
+    top: -236px;
+    left: 202px;
+  }
+
+  &.imageTwoPulsarOne {
+    top: -236px;
+    left: 375px;
+  }
+
+  &.imageThreePulsarZero {
+    top: -366px;
+    left: 126px;
+  }
+
+  &.imageSevenPulsarZero {
+    top: -395px;
+    left: 97px;
+  }
+
+  &.imageSevenPulsarOne {
+    top: -319px;
+    left: 91px;
+  }
+
+  &.imageSevenPulsarTwo {
+    top: -361px;
+    left: 148px;
+  }
+
+  > div {
+    background-color: $pulsar-purple;
+    border-radius: 20px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@keyframes borderPulse {
+  75% {
+    transform: translate(0, 0);
+    width: 10px;
+    height: 10px;
+  }
+
+  87% {
+    transform: translate(-5px, -5px);
+    width: 20px;
+    height: 20px;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.ProductTour--marginTop {
+  margin-top: 200px;
+}

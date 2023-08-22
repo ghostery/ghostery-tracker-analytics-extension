@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/PageSizeGraph/ Snapshot test with shallow PageSizeGraph should render 1`] = `
+<div
+  className="StandAloneGraph__background d-flex"
+>
+  <div
+    className="d-flex flex-column"
+  >
+    <Connect(StandAloneGraphHeader)
+      handleClick={null}
+      small={false}
+      title="Page Size"
+      tooltipText="View a breakdown of total page size into separate categories"
+    >
+      <p
+        className="StandAloneGraphHeader__keyData"
+      />
+    </Connect(StandAloneGraphHeader)>
+    <div
+      style={
+        Object {
+          "height": "1px",
+          "width": "1px",
+        }
+      }
+    />
+  </div>
+</div>
+`;

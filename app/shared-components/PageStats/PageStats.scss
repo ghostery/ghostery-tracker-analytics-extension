@@ -1,0 +1,131 @@
+@import '../../utils/scss/color-variables.scss';
+
+.PageStats__container {
+  background-image: $foreground-gradient;
+  border-radius: 5px;
+  padding-bottom: 1px;
+  height: 24px;
+
+  &.panel {
+    padding-bottom: 0;
+    width: 500px;
+  }
+}
+
+.PageStats {
+  height: 24px;
+  font-weight: 600;
+
+  &.panel {
+    padding: 0 10px 0 30px;
+  }
+
+  a {
+    padding: 0;
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.PageStats__trackerParentageButton {
+  margin: 0 -11px 0 6px;
+  box-shadow: inset 3px 0 4px -1px $opaque-background-half;
+  background-color: $white;
+  border-radius: 0 5px 5px 0;
+  width: 35px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.PageStats__panelButton {
+  margin: 0 5px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $ghosty-blue;
+  }
+}
+
+.PageStats__tabIconExplainerContainer {
+  position: relative;
+  top: 2px;
+}
+
+.PageStats__tabIconExplainer {
+  position: absolute;
+  z-index: 1;
+  top: 34px;
+  left: -160px;
+  opacity: .98;
+  box-shadow: 0 2px 4px 0 $opaque-background-half;
+  background-image: $background-button-gradient;
+  border: solid 1px $ghosty-blue;
+  border-radius: 6px;
+  width: 345px;
+  height: 145px;
+}
+
+// Implements the triangle arrow that points to the tab icon
+
+.PageStats__tabIconExplainer::after,
+.PageStats__tabIconExplainer::before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  border: solid;
+  content: ' ';
+}
+
+.PageStats__tabIconExplainer::after {
+  margin-left: -8px;
+  border-color: $transparent $transparent $halfway-along-background-gradient;
+  border-width: 0 8px 14px;
+}
+
+.PageStats__tabIconExplainer::before {
+  margin-left: -10px;
+  border-color: $transparent $transparent $ghosty-blue;
+  border-width: 0 10px 16px;
+}
+// End of the triangle-arrow-related stuff
+
+.PageStats__iconAndDescriptionContainer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .description {
+    width: 221px;
+    height: 60px;
+    font-size: 14px;
+    line-height: 2.14;
+  }
+}
+
+.PageStats__ctaButton {
+  margin-top: 10px;
+  margin-left: 98px;
+  background-image: linear-gradient(110deg, $very-light-grey 1%, $white 100%);
+  border-radius: 4px;
+  width: 105px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(110deg, $medium-grey 1%, $light-grey 100%);
+  }
+
+  .text {
+    font-size: 14px;
+    color: $topaz-blue;
+  }
+}

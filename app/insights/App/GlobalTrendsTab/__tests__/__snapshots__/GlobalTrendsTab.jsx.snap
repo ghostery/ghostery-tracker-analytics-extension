@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/insights/App/GlobalTrendsTab/ Snapshot tests with react-test-renderer GlobalTrendsTab component should render 1`] = `
+<div
+  className="GlobalTrendsTab d-flex justify-content-between align-items-start"
+>
+  <div
+    className="GlobalTrendsTab__list GlobalTrendsTab--opaqueBackground"
+  >
+    <div
+      className="GlobalTrendsTab__listHeader d-flex flex-column justify-content-between"
+    >
+      <div
+        className="d-flex justify-content-start align-items-center"
+      >
+        <h3
+          className="GlobalTrendsTab--marginRight"
+        >
+          Known Tracker Trends
+        </h3>
+        <OverlayTrigger
+          defaultOverlayShown={false}
+          overlay={
+            <Tooltip
+              className="tooltipRight"
+              placement="right"
+            >
+              View available statistics and trends over time for trackers on this page
+            </Tooltip>
+          }
+          placement="auto"
+          trigger={
+            Array [
+              "hover",
+              "focus",
+            ]
+          }
+        >
+          <img
+            alt="More info hover: View known tracker trends"
+            className="infoIcon"
+            height="16"
+            src="/dist/images/shared/info-icon.svg"
+            width="16"
+          />
+        </OverlayTrigger>
+      </div>
+      <div
+        className="GlobalTrendsTab__headerButtonList d-flex justify-content-between align-items-center"
+      >
+        <p>
+          Sort by: 
+        </p>
+        <OverlayTrigger
+          defaultOverlayShown={false}
+          delay={
+            Object {
+              "show": 500,
+            }
+          }
+          overlay={
+            <Tooltip
+              className="tooltipLeft"
+              placement="right"
+            >
+              Sort by favorited trackers
+            </Tooltip>
+          }
+          placement="top"
+          trigger={
+            Array [
+              "hover",
+              "focus",
+            ]
+          }
+        >
+          <div
+            className="GlobalTrendsTab__headerButton d-flex justify-content-center align-items-center active"
+            onClick={[Function]}
+          >
+            <p>
+              Favorites
+            </p>
+          </div>
+        </OverlayTrigger>
+        <OverlayTrigger
+          defaultOverlayShown={false}
+          delay={
+            Object {
+              "show": 500,
+            }
+          }
+          overlay={
+            <Tooltip
+              className="tooltipLeft"
+              placement="right"
+            >
+              Sort by most common trackers
+            </Tooltip>
+          }
+          placement="top"
+          trigger={
+            Array [
+              "hover",
+              "focus",
+            ]
+          }
+        >
+          <div
+            className="GlobalTrendsTab__headerButton d-flex justify-content-center align-items-center"
+            onClick={[Function]}
+          >
+            <p>
+              Prevalence
+            </p>
+          </div>
+        </OverlayTrigger>
+        <OverlayTrigger
+          defaultOverlayShown={false}
+          delay={
+            Object {
+              "show": 500,
+            }
+          }
+          overlay={
+            <Tooltip
+              className="tooltipLeft"
+              placement="right"
+            >
+              Sort by tracker type
+            </Tooltip>
+          }
+          placement="top"
+          trigger={
+            Array [
+              "hover",
+              "focus",
+            ]
+          }
+        >
+          <div
+            className="GlobalTrendsTab__headerButton d-flex justify-content-center align-items-center"
+            onClick={[Function]}
+          >
+            <p>
+              Category
+            </p>
+          </div>
+        </OverlayTrigger>
+      </div>
+    </div>
+    <div
+      className="GlobalTrendsTab__tableHeader"
+    >
+      <Container
+        className="GlobalTrendsTab__tableHeaderContainer"
+        fluid={true}
+      >
+        <ForwardRef
+          noGutters={false}
+        >
+          <Col
+            className="GlobalTrendsListItem--paddingZero"
+            sm={1}
+          />
+          <Col
+            className="GlobalTrendsListItem__prevalence GlobalTrendsListItem--paddingZero"
+            sm={2}
+          >
+            Prevalence
+          </Col>
+          <Col
+            className="GlobalTrendsListItem--paddingZero"
+            sm={5}
+          >
+            Tracker
+          </Col>
+          <Col
+            className="GlobalTrendsListItem--paddingZero"
+            sm={4}
+          >
+            Category
+          </Col>
+        </ForwardRef>
+      </Container>
+    </div>
+  </div>
+  <div
+    className="GlobalTrendsTab__stats"
+  >
+    <div
+      className="GlobalTrendsTab__statDisplay GlobalTrendsTab--opaqueBackground"
+    >
+      <div
+        className="d-flex justify-content-start align-items-center"
+      >
+        <h3
+          className="GlobalTrendsTab--marginRight"
+        >
+          Total Tracker Size on this Page
+        </h3>
+        <OverlayTrigger
+          defaultOverlayShown={false}
+          overlay={
+            <Tooltip
+              className="tooltipLeft"
+              placement="right"
+            >
+              Aggregate size of all trackers found on this page
+            </Tooltip>
+          }
+          placement="auto"
+          trigger={
+            Array [
+              "hover",
+              "focus",
+            ]
+          }
+        >
+          <img
+            alt="More info hover: Aggregate size of all trackers found on this page"
+            className="infoIcon"
+            height="16"
+            src="/dist/images/shared/info-icon.svg"
+            width="16"
+          />
+        </OverlayTrigger>
+      </div>
+      <p
+        className="GlobalTrendsTab__statText"
+      >
+        1 B
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,108 @@
+@import '../../utils/scss/color-variables.scss';
+
+.Header {
+  padding: 10px 0 9px;
+}
+
+.Header__logo {
+  padding: 0;
+  text-decoration: none;
+
+  > img {
+    position: relative;
+    width: 123px;
+    height: 30px;
+  }
+
+  &.panel > img {
+    top: 1px;
+    width: 98px;
+    height: 24px;
+  }
+}
+
+.Header__parentTabClosedText {
+  margin: 0 60px 0 0;
+  font-weight: 600;
+  color: $ghosty-blue;
+}
+
+.Header__freeTrialDays {
+  margin: 0 10px 0 0;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  color: $info-red;
+
+  &.panel {
+    margin: 0 0 0 15px;
+    font-size: 12px;
+  }
+}
+
+.Header__link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Header__exportIcon {
+  margin-left: 30px;
+  margin-right: 27px;
+  width: 18px;
+  height: 20px;
+  cursor: pointer;
+
+  &.panel {
+    margin-left: 22px;
+    margin-right: 19px;
+  }
+
+  &:hover > path {
+    fill: $ghosty-blue;
+  }
+
+  &.disabled {
+    pointer-events: none;
+  }
+
+  &.disabled > path {
+    fill: $medium-grey;
+  }
+}
+
+.Header__dropdownToggle {
+  cursor: pointer;
+
+  &:hover > path {
+    fill: $ghosty-blue;
+  }
+}
+
+.Header__dropdownMenu {
+  top: -18px;
+  right: -18px;
+  opacity: 1;
+  background-color: $opaque-background-off-white;
+  border-radius: 0;
+  padding: 0;
+  width: 300px;
+  height: 700px;
+  font-size: 14px;
+  text-align: center;
+
+  // Flex properties need to be defined here since they'll interfere with the
+  // closed/open state of the dropdown if defined in the class name
+
+  &.show {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &.panel {
+    position: fixed;
+    top: -3px;
+    right: -1px;
+    height: 100vh;
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../../utils/scss/open-sans.scss';
+@import '../../../utils/scss/color-variables.scss';
+
+.License {
+  margin: 29px 0 29px 48px;
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.License__link {
+  text-decoration: none;
+  color: $ghosty-blue;
+}
+
+.License__textToggle {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.License__text {
+  margin: 6px 48px 0 0;
+  border: 1px solid $white;
+  padding: 5px;
+  display: flex;
+}
+
+.License__hr {
+  margin: 0 22px;
+  border-bottom: 1px solid $medium-grey;
+  display: flex;
+}

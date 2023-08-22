@@ -1,0 +1,411 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/insights/App/TrackerParentageTab/ Snapshot tests with react-test-renderer TrackerParentageTab component should render 1`] = `
+<div
+  className="TrackerParentageTab"
+>
+  <div
+    className="TrackerParentageTab__filters"
+  >
+    <div
+      className="TrackerParentageTab__filtersHeader"
+    >
+      Filter nodes by category:
+    </div>
+    <div
+      className="TrackerParentageTab__filterButtons d-flex flex-wrap"
+    >
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="beacon"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          beacon
+        </div>
+      </div>
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="csp_report"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          csp_report
+        </div>
+      </div>
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="font"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          font
+        </div>
+      </div>
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="image"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          image
+        </div>
+      </div>
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="main_frame"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          main_frame
+        </div>
+      </div>
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="media"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          media
+        </div>
+      </div>
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="miscellaneous"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          miscellaneous
+        </div>
+      </div>
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="object"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          object
+        </div>
+      </div>
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="ping"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          ping
+        </div>
+      </div>
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="script"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          script
+        </div>
+      </div>
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="stylesheet"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          stylesheet
+        </div>
+      </div>
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="sub_frame"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          sub_frame
+        </div>
+      </div>
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="websocket"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          websocket
+        </div>
+      </div>
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="xmlhttprequest"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          xmlhttprequest
+        </div>
+      </div>
+      <div
+        className="TrackerParentageTab__filterButton d-flex align-items-center justify-content-center"
+        key="other"
+        onClick={[Function]}
+      >
+        <div
+          className="TrackerParentageTab__buttonText"
+        >
+          other
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="TrackerParentageTab__bottomGroup d-flex"
+  >
+    <div
+      className="d-flex flex-column"
+    >
+      <div
+        className="TrackerParentageTab__requestListHeader d-flex align-items-center"
+      >
+        <div>
+          Requests
+        </div>
+        <OverlayTrigger
+          container={null}
+          defaultOverlayShown={false}
+          overlay={
+            <Tooltip
+              className="tooltipLeft"
+              placement="right"
+            >
+              Select a request from the list to highlight it in the Parentage graph
+            </Tooltip>
+          }
+          placement="auto"
+          trigger={
+            Array [
+              "hover",
+              "focus",
+            ]
+          }
+        >
+          <img
+            alt="More info hover: Select a request from the list to highlight it in the Parentage graph"
+            className="TrackerParentageTab__infoIcon"
+            height="16"
+            src={
+              Array [
+                undefined,
+              ]
+            }
+            width="16"
+          />
+        </OverlayTrigger>
+      </div>
+      <div
+        className="TrackerParentageTab__requestList"
+      >
+        <OverlayTrigger
+          container={null}
+          defaultOverlayShown={false}
+          overlay={
+            <Tooltip
+              className="parentageRequestList tooltipCenter"
+              placement="right"
+            >
+              <p
+                className="TrackerParentageTab--boldText"
+              >
+                Unknown - main_frame
+              </p>
+              <p>
+                https://test.com/
+              </p>
+            </Tooltip>
+          }
+          placement="right"
+          trigger={
+            Array [
+              "hover",
+              "focus",
+            ]
+          }
+        >
+          <div
+            className="TrackerParentageTab__request d-flex align-items-center"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <img
+              alt="host-wye"
+              src="/dist/images/app/host-wye.svg"
+            />
+            <div
+              className="TrackerParentageTab__requestNameAndType"
+            >
+              Unknown - main_frame
+            </div>
+          </div>
+        </OverlayTrigger>
+      </div>
+    </div>
+    <div
+      className="TrackerParentageTab__graphContainer"
+    >
+      <div
+        styles={
+          Object {
+            "height": "2000px",
+            "width": "2000px",
+          }
+        }
+      />
+    </div>
+    <div
+      className="TrackerParentageTab__dropdownContainer"
+    >
+      <div
+        className="TrackerParentageTab__dropdown"
+      >
+        <div
+          className="TrackerParentageTab__dropdownHeader d-flex align-items-center justify-content-between"
+          onClick={[Function]}
+        >
+          <div>
+            Key
+          </div>
+          <div
+            className="TrackerParentageTab__dropdownCaret open"
+          />
+        </div>
+        <Collapse
+          appear={false}
+          dimension="height"
+          getDimensionValue={[Function]}
+          in={true}
+          mountOnEnter={false}
+          timeout={200}
+          unmountOnExit={false}
+        >
+          <div
+            className="TrackerParentageTab__dropdownContentContainer"
+          >
+            <div
+              className="TrackerParentageTab__dropdownContent keyContent d-flex flex-column align-items-start justify-content-between"
+            >
+              <div
+                className="TrackerParentageTab__keyTrackerDiamond d-flex align-items-center"
+              >
+                <img
+                  alt="tracker-diamond"
+                  src="/dist/images/app/tracker-diamond.svg"
+                />
+                <div
+                  className="TrackerParentageTab__keyDropdownText"
+                >
+                  Tracker
+                </div>
+              </div>
+              <div
+                className="TrackerParentageTab__keyUnknown d-flex align-items-center"
+              >
+                <img
+                  alt="unknown-triangle"
+                  src="/dist/images/app/unknown-triangle.svg"
+                />
+                <div
+                  className="TrackerParentageTab__keyDropdownText"
+                >
+                  Unknown
+                </div>
+              </div>
+              <div
+                className="TrackerParentageTab__keyCurrentSite d-flex align-items-center"
+              >
+                <img
+                  alt="host-wye"
+                  src="/dist/images/app/host-wye.svg"
+                />
+                <div
+                  className="TrackerParentageTab__keyDropdownText"
+                >
+                  Current Site
+                </div>
+              </div>
+            </div>
+          </div>
+        </Collapse>
+      </div>
+      <div
+        className="TrackerParentageTab__dropdown"
+      >
+        <div
+          className="TrackerParentageTab__dropdownHeader d-flex align-items-center justify-content-between"
+          onClick={[Function]}
+        >
+          <div>
+            Parentage Refresh
+          </div>
+          <div
+            className="TrackerParentageTab__dropdownCaret open"
+          />
+        </div>
+        <Collapse
+          appear={false}
+          dimension="height"
+          getDimensionValue={[Function]}
+          in={true}
+          mountOnEnter={false}
+          timeout={200}
+          unmountOnExit={false}
+        >
+          <div
+            className="TrackerParentageTab__dropdownContentContainer"
+          >
+            <div
+              className="TrackerParentageTab__dropdownContent d-flex flex-column align-items-center justify-content-between"
+            >
+              <div
+                className="TrackerParentageTab__refreshDropdownText"
+              >
+                Up to date, no new request information to display
+              </div>
+              <div
+                className="TrackerParentageTab__refreshButton d-flex align-items-center justify-content-center disabled"
+                onClick={[Function]}
+              >
+                Refresh
+              </div>
+            </div>
+          </div>
+        </Collapse>
+      </div>
+    </div>
+  </div>
+</div>
+`;

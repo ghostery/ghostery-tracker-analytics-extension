@@ -1,0 +1,153 @@
+@import '../../../utils/scss/color-variables.scss';
+@import '../Settings.scss';
+
+$header-height: 199px;
+
+.FavoriteTrackersSearch__favoriteSettingsTabContent {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.FavoriteTrackersSearch__favoriteTabHeader {
+  & > img {
+    margin-top: 15px;
+    width: 13px;
+    height: 13px;
+  }
+
+  & > p {
+    margin: 15px 0 0 8px;
+    font-weight: bold;
+    font-size: 13px;
+    color: $dark-grey;
+  }
+}
+
+.FavoriteTrackersSearch__inputDropdownGroup {
+  position: relative;
+  margin: 0 auto;
+  width: 87%;
+}
+
+.FavoriteTrackersSearch__searchInputContainer {
+  width: 100%;
+}
+
+.FavoriteTrackersSearch__searchInput {
+  margin-top: 11px;
+  box-shadow: inset 0 1px 2px -.4px $opaque-background;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  border-radius: 2.5px;
+  padding-left: 10px;
+  width: 100%;
+  height: 25px;
+  font-size: 11px;
+  color: $dark-grey;
+}
+
+.FavoriteTrackersSearch__searchDropdown {
+  position: absolute;
+  background-color: $light-grey;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 3px 0;
+  width: 100%;
+  max-height: 200px;
+  cursor: pointer;
+}
+
+.FavoriteTrackersSearch__searchResult {
+  margin-left: 10px;
+  width: 100%;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: left;
+
+  &.focused,
+  &:hover {
+    color: $ghosty-blue;
+  }
+}
+
+.FavoriteTrackersSearch__favoriteText {
+  margin: 9px 0 20px 2px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: left;
+  color: $dark-grey;
+}
+
+.FavoriteTrackersSearch__starredList {
+  margin: 10px 0 0;
+  border-top: solid 1px $dark-grey;
+  overflow-y: auto;
+  min-height: 230px;
+  max-height: 230px;
+  display: none;
+
+  &.show {
+    display: block;
+  }
+
+  &.panel {
+    max-height: calc(100vh - #{$header-height} - #{$footer-height});
+  }
+}
+
+.FavoriteTrackersSearch__starredTracker {
+  box-sizing: border-box;
+  border-color: $dark-grey transparent transparent;
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 13px;
+  width: 100%;
+  height: 39px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 39px;
+  text-align: left;
+  color: $dark-grey;
+
+  &:first-of-type {
+    border-color: transparent;
+  }
+
+  &:last-of-type {
+    border-color: $dark-grey transparent;
+  }
+
+  &:only-of-type {
+    border-color: transparent transparent $dark-grey;
+  }
+
+  > img {
+    margin-right: 15px;
+    width: 10px;
+    height: 10px;
+    display: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    border-color: $ghosty-blue;
+    color: $ghosty-blue;
+
+    > img {
+      display: block;
+    }
+
+    + .FavoriteTrackersSearch__starredTracker {
+      border-color: transparent;
+    }
+
+    + .FavoriteTrackersSearch__starredTracker:last-of-type {
+      border-color: transparent transparent $dark-grey;
+    }
+  }
+}

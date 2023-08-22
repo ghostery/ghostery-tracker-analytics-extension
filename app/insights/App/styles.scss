@@ -1,0 +1,29 @@
+/*!
+ * App Tab CSS
+ *
+ * Insights by Ghostery
+ * https://www.ghostery.com/insights/
+ *
+ * Copyright 2019 Ghostery, Inc. All rights reserved.
+ * See https://www.ghostery.com/eula for license agreement.
+ */
+@import '../../utils/scss/normalize.scss';
+@import '../../utils/scss/overrides.scss';
+@import '../../utils/scss/open-sans.scss';
+@import '../../utils/scss/color-variables.scss';
+@import '../../shared-components/Tooltips/tooltips.scss';
+
+.App__container {
+  background-image: $background-gradient;
+  overflow-x: hidden;
+  height: 100vh;
+
+  &.noScroll {
+    overflow-y: hidden;
+  }
+}
+
+.App {
+  position: relative;
+  width: 954px;
+}

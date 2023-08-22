@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/licenses/App Snapshot tests with react-test-renderer App entry point component should render 1`] = `
+<div
+  className="Licenses"
+>
+  <div
+    className="Licenses__header d-flex justify-content-between"
+  >
+    <NavbarBrand
+      className="Licenses__logo"
+      href="https://www.ghostery.com/products/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Insights by Ghostery Icon"
+        height="30px"
+        src="/dist/images/logo-icons/insights-text-white.svg"
+        width="93px"
+      />
+    </NavbarBrand>
+    <span
+      className="Licenses__title"
+    >
+      Licenses
+    </span>
+  </div>
+  <div
+    className="Licenses__list"
+  >
+    <License
+      isLastItem={true}
+      key="test"
+      license={
+        Object {
+          "email": "test@test.com",
+          "licenseText": "test",
+          "licenses": "test-license",
+          "name": "test",
+          "publisher": "test-publisher",
+          "repository": "test-repo",
+          "url": "tst.com",
+        }
+      }
+    />
+  </div>
+  <div
+    className="Licenses__copyright"
+  >
+    Ghostery© is a Cliqz company. Learn more about Cliqz. ©Cliqz International GmbH, a wholly-owned subsidiary of Cliqz GmbH. All rights reserved.
+  </div>
+</div>
+`;

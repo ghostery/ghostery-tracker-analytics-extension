@@ -1,0 +1,80 @@
+/**
+* Take care of all types of Roboto imports.
+*/
+
+// Uncomment font imports when you need to add them to the Info Center
+
+/* Light / 300 */
+/* -------------------------------------------------------------------------- */
+// @font-face {
+//   font-family: Roboto;
+//   font-weight: 300;
+//   src: url('/dist/fonts/roboto/Roboto-Light.ttf');
+// }
+//
+// @font-face {
+//   font-family: Roboto;
+//   font-style: italic;
+//   font-weight: 300;
+//   src: url('/dist/fonts/roboto/Roboto-LightItalic.ttf');
+// }
+
+/* Regular / 400 */
+/* -------------------------------------------------------------------------- */
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  src: url('/dist/fonts/roboto/Roboto-Regular.ttf');
+}
+
+// @font-face {
+//   font-family: Roboto;
+//   font-style: italic;
+//   font-weight: 400;
+//   src: url('/dist/fonts/roboto/Roboto-Italic.ttf');
+// }
+
+/* Semi-Bold / 600 */
+/* -------------------------------------------------------------------------- */
+@font-face {
+  font-family: Roboto;
+  font-weight: 600;
+  src: url('/dist/fonts/roboto/Roboto-Medium.ttf');
+}
+
+// @font-face {
+//   font-family: Roboto;
+//   font-style: italic;
+//   font-weight: 600;
+//   src: url('/dist/fonts/roboto/Roboto-MediumItalic.ttf');
+// }
+
+/* Bold / 700 */
+/* -------------------------------------------------------------------------- */
+@font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  src: url('/dist/fonts/roboto/Roboto-Bold.ttf');
+}
+
+// @font-face {
+//   font-family: Roboto;
+//   font-style: italic;
+//   font-weight: 700;
+//   src: url('/dist/fonts/roboto/Roboto-BoldItalic.ttf');
+// }
+
+/* Extra-Bold / 800 */
+/* -------------------------------------------------------------------------- */
+// @font-face {
+//   font-family: Roboto;
+//   font-weight: 800;
+//   src: url('/dist/fonts/roboto/Roboto-Black.ttf');
+// }
+//
+// @font-face {
+//   font-family: Roboto;
+//   font-style: italic;
+//   font-weight: 800;
+//   src: url('/dist/fonts/roboto/Roboto-BlackItalic.ttf');
+// }

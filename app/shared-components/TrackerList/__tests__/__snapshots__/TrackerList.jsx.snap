@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/TrackerList/ Snapshot test with shallow TrackerList should render 1`] = `
+<div
+  className="TrackerList"
+>
+  <div
+    className="TrackerList__smallHeader d-flex align-items-center justify-content-between"
+  >
+    <p>
+      # Tracker Requests
+    </p>
+    <NavLink
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "SafeAnchor",
+          "render": [Function],
+        }
+      }
+      disabled={false}
+      onClick={null}
+    >
+      See details
+    </NavLink>
+  </div>
+  <div
+    className="TrackerList__emptyState d-flex justify-content-center align-items-center"
+  >
+    <p>
+      No trackers  match that filter set
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,122 @@
+{
+	"extends": "stylelint-config-standard",
+	"plugins": [
+		"stylelint-order",
+		"stylelint-scss"
+	],
+	"rules": {
+		"indentation": 2,
+		"selector-class-pattern": [
+			"(^[a-z]([a-z]|[A-Z][a-z])+$)|(^[A-Z][a-z]([a-z]|[A-Z][a-z])+$)|(^[A-Z][a-z]([a-z]|[A-Z][a-z])+--|__[a-z][a-zA-Z]+$)",
+			{
+				"message": "You must use the Ghostery-BEM class naming conventions (eg. \".ThemedToast\" (parent HTML node of component), \".ThemedToast__closeButton\" (child HTML node in component), \".ThemedToast--boldText\" (a specific CSS property), or \".displayText\" (a secondary, modifying class that is not always applied)"
+			}
+			],
+		"at-rule-no-unknown": null,
+		"scss/at-rule-no-unknown": true,
+		"declaration-no-important": true,
+		"declaration-block-single-line-max-declarations": 1,
+		"selector-attribute-operator-whitelist": ["^="],
+		"block-no-empty": true,
+		"color-named": "never",
+		"number-leading-zero": "never",
+		"value-list-comma-space-after": "always",
+		"value-list-comma-space-before": "never",
+		"value-list-max-empty-lines": 0,
+		"function-comma-space-after": "always-single-line",
+		"function-comma-space-before": "never",
+		"rule-empty-line-before": [
+			"always",
+			{
+				"except": ["first-nested"]
+			}
+		],
+		"comment-empty-line-before": [
+			"always",
+			{
+				"ignore": ["after-comment"]
+			}
+		],
+		"custom-property-empty-line-before": null,
+		"no-descending-specificity": null,
+		"order/order": [
+			"at-variables",
+			"at-rules",
+			"less-mixins",
+			"declarations",
+			"rules"
+		],
+		"order/properties-order": [
+			"visibility",
+			"position",
+			"z-index",
+			"vertical-align",
+			"top",
+			"bottom",
+			"left",
+			"right",
+			"transform",
+			"margin",
+			"margin-top",
+			"margin-bottom",
+			"margin-left",
+			"margin-right",
+			"opacity",
+			"box-shadow",
+			"background",
+			"background-color",
+			"background-image",
+			"background-position",
+			"background-repeat",
+			"background-size",
+			"object-fit",
+			"box-sizing",
+			"outline",
+			"border",
+			"border-top",
+			"border-bottom",
+			"border-left",
+			"border-right",
+			"border-color",
+			"border-radius",
+			"border-width",
+			"border-style",
+			"overflow",
+			"overflow-x",
+			"overflow-y",
+			"padding",
+			"padding-top",
+			"padding-bottom",
+			"padding-left",
+			"padding-right",
+			"width",
+			"min-width",
+			"max-width",
+			"height",
+			"min-height",
+			"max-height",
+			"display",
+			"flex-direction",
+			"flex-shrink",
+			"flex-wrap",
+			"align-items",
+			"justify-content",
+			"white-space",
+			"font-family",
+			"font-weight",
+			"font-size",
+			"font-style",
+			"line-height",
+			"text-align",
+			"text-decoration",
+			"text-overflow",
+			"text-shadow",
+			"color",
+			"cursor",
+			"content",
+			"pointer-events",
+			"transition",
+			"animation"
+		]
+	}
+}

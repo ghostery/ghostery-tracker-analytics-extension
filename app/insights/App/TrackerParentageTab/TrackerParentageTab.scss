@@ -1,0 +1,235 @@
+@import '../../../utils/scss/color-variables.scss';
+
+$graph-and-list-height: 500px;
+$request-list-width: 248px;
+$request-item-padding: 10px;
+$dropdown-header-height: 22px;
+
+.TrackerParentageTab {
+  margin-bottom: 50px;
+  background-color: $opaque-background-light;
+  width: 954px;
+  font-weight: 600;
+}
+
+.TrackerParentageTab__filters {
+  background-color: $black;
+  width: 100%;
+}
+
+.TrackerParentageTab__filtersHeader {
+  padding: 8px 0 8px 10px;
+  font-size: 10px;
+}
+
+.TrackerParentageTab__filterButton {
+  margin: 0 0 10px 10px;
+  background-color: transparent;
+  border: 1px solid $medium-grey;
+  border-radius: 2px;
+  width: 106px;
+  height: 24px;
+  color: $medium-grey;
+  cursor: not-allowed;
+  transition: background-color .2s ease;
+
+  &.onGraph {
+    border: 1px solid $white;
+    color: $white;
+    cursor: pointer;
+  }
+
+  &.highlighted {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.TrackerParentageTab__buttonText {
+  position: relative;
+  top: -1px;
+  font-size: 11px;
+}
+
+.TrackerParentageTab__bottomGroup {
+  position: relative;
+}
+
+.TrackerParentageTab__requestListHeader {
+  margin: 3px 0;
+  background-color: $black;
+  padding: 0 $request-item-padding;
+  width: calc($request-list-width - (#{$request-item-padding} * 2));
+  height: 26px;
+  font-size: 10px;
+}
+
+.TrackerParentageTab__infoIcon {
+  margin-left: 15px;
+}
+
+.TrackerParentageTab__requestList {
+  overflow-y: auto;
+  width: $request-list-width;
+  height: calc(#{$graph-and-list-height} - (32px));
+}
+
+.TrackerParentageTab__request {
+  margin-bottom: 3px;
+  opacity: 1;
+  background-color: $black;
+  border: 1px solid transparent;
+  padding: 0 $request-item-padding;
+  height: 40px;
+  cursor: pointer;
+  transition: opacity .2s ease;
+
+  &.dimmed {
+    opacity: .5;
+  }
+
+  &:hover,
+  &.hovered {
+    border: 1px solid $ghosty-blue;
+  }
+}
+
+.TrackerParentageTab__requestNameAndType {
+  overflow: hidden;
+  width: calc(100% - (#{$request-item-padding} * 2));
+  white-space: nowrap;
+  font-size: 11px;
+  text-overflow: ellipsis;
+}
+
+.TrackerParentageTab__graphContainer {
+  overflow: scroll;
+  width: calc(954px - #{$request-list-width});
+  height: $graph-and-list-height;
+}
+
+.TrackerParentageTab__dropdownContainer {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.TrackerParentageTab__dropdown {
+  margin-bottom: 16px;
+  width: 177px;
+}
+
+.TrackerParentageTab__dropdownHeader {
+  background-color: $black;
+  padding: 0 15px 0 8px;
+  height: 22px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.TrackerParentageTab__dropdownCaret {
+  border-top: 5px solid $white;
+  border-bottom: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  transition: border-top .15s linear, border-bottom .15s linear;
+
+  &.open {
+    border-top: 0;
+    border-bottom: 5px solid $white;
+  }
+}
+
+.TrackerParentageTab__dropdownContent {
+  background-color: $opaque-background-half;
+  height: 113px;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+
+  &.keyContent {
+    padding: 15px 0 17px 32px;
+    height: 73px;
+  }
+}
+
+.TrackerParentageTab__keyTrackerDiamond {
+  padding-left: 4px;
+
+  .TrackerParentageTab__keyDropdownText {
+    margin-left: 3px;
+  }
+}
+
+.TrackerParentageTab__keyUnknown {
+  padding-left: 1px;
+}
+
+.TrackerParentageTab__keyCurrentSite {
+  .TrackerParentageTab__keyDropdownText {
+    margin-left: -2px;
+  }
+}
+
+.TrackerParentageTab__refreshDropdownText {
+  margin-top: 17px;
+}
+
+.TrackerParentageTab__refreshButton {
+  margin-bottom: 18px;
+  background: $background-button-gradient;
+  border-radius: 2.5px;
+  width: 110px;
+  height: 30px;
+  font-size: 12px;
+  color: $white;
+  cursor: pointer;
+
+  &.disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+}
+
+.TrackerParentageTab__node {
+  opacity: 1;
+  transition: opacity .2s ease;
+  stroke: $dark-grey;
+  stroke-width: 1.5px;
+
+  &.dim {
+    opacity: .2;
+  }
+
+  &:hover,
+  &.hovered {
+    stroke: $white;
+  }
+}
+
+.TrackerParentageTab__links line {
+  stroke: $medium-grey;
+  stroke-opacity: .6;
+}
+
+.TrackerParentageTab--boldText {
+  margin-bottom: -5px;
+  font-weight: 600;
+}
+
+.tooltip.parentageRequestList {
+  left: $request-list-width !important;
+}
+
+.TrackerParentageTab__blankDataBackground {
+  background-color: $opaque-background-light;
+  width: 100%;
+  height: 160px;
+}
+
+.TrackerParentageTab__blankDataMessage {
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}

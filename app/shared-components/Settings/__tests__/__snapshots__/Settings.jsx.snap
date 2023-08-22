@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/Settings/ Snapshot tests with shallow Settings component should render 1`] = `<Fragment />`;

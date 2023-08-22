@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/ThemedLegend/ Snapshot tests with shallow ThemedLegend component should render 1`] = `
+<div
+  className="ThemedLegend d-flex"
+>
+  <div
+    className="ThemedLegend__keyContainer d-flex align-items-center"
+    key="green"
+  >
+    <div
+      className="ThemedLegend__keyIcon green"
+    />
+    <span
+      className="ThemedLegend__keyText"
+    >
+      0-99 ms
+    </span>
+  </div>
+  <div
+    className="ThemedLegend__keyContainer d-flex align-items-center"
+    key="yellow"
+  >
+    <div
+      className="ThemedLegend__keyIcon yellow"
+    />
+    <span
+      className="ThemedLegend__keyText"
+    >
+      100-499 ms
+    </span>
+  </div>
+  <div
+    className="ThemedLegend__keyContainer d-flex align-items-center"
+    key="red"
+  >
+    <div
+      className="ThemedLegend__keyIcon red"
+    />
+    <span
+      className="ThemedLegend__keyText"
+    >
+      500+ ms
+    </span>
+  </div>
+</div>
+`;

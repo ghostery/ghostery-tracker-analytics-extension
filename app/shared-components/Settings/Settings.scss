@@ -1,0 +1,292 @@
+@import '../../utils/scss/color-variables.scss';
+
+$footer-height: 271px;
+
+.Settings {
+  width: 100%;
+  height: inherit;
+  font-weight: 600;
+}
+
+.Settings__main {
+  overflow-y: auto;
+  height: inherit;
+}
+
+.Settings__closeButton {
+  position: relative;
+  top: 10px;
+  left: calc(100% - 20px);
+  width: 10px;
+  min-height: 11px;
+  cursor: pointer;
+}
+
+.Settings__settingsTabsContainer {
+  flex-grow: 1;
+}
+
+.Settings__settingsTabs {
+  margin-top: 9px;
+}
+
+.Settings__blackLine {
+  position: relative;
+  top: 34px;
+  background-color: $black;
+  width: 30px;
+  height: 1px;
+}
+
+.nav-item > .Settings__settingsTab.nav-link {
+  margin-top: 8px;
+  background-color: $medium-grey;
+  box-sizing: border-box;
+  outline: 0;
+  border-bottom: 1px solid $black;
+  padding: 6px 0 0;
+  min-width: 120px;
+  height: 27px;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    color: $white;
+  }
+
+  &:focus {
+    color: $white;
+  }
+
+  &.active {
+    margin-top: 7px;
+    background-color: transparent;
+    border: 1px solid $black;
+    border-bottom: 0;
+    height: 28px;
+    color: $dark-grey;
+  }
+}
+
+.Settings__tabPane {
+  height: 100%;
+  min-height: 373px;
+}
+
+.Settings__displaySettingsTabContent {
+  margin: 17px 13px;
+  width: 92%;
+}
+
+.Settings__headerText {
+  margin: 0;
+  font-weight: 700;
+  font-size: 13px;
+  color: $dark-grey;
+
+  &.panelLayout {
+    margin: 26px 0;
+  }
+
+  &.panelPalettes {
+    margin: 29px 0 26px;
+  }
+}
+
+.Settings__textToggleContainer {
+  width: 100%;
+}
+
+.Settings__toggle {
+  position: relative;
+  cursor: pointer;
+
+  .Settings__toggleSlider {
+    position: relative;
+    background-color: $opaque-background-light;
+    border-radius: 5px;
+    width: 26px;
+    height: 10px;
+    transition: background-color .2s;
+  }
+
+  .Settings__toggleButton {
+    position: absolute;
+    left: -1px;
+    box-shadow: 0 .5px 2px $dark-grey;
+    background-color: $off-white;
+    border-radius: 8px;
+    width: 16px;
+    height: 16px;
+    transition: background-color .2s, left .2s;
+  }
+
+  > p {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+}
+
+.Settings__toggle.on {
+  .Settings__toggleSlider {
+    background-color: $opaque-ghosty-blue;
+  }
+
+  .Settings__toggleButton {
+    left: 11px;
+    background-color: $ghosty-blue;
+  }
+
+  > p {
+    color: $ghosty-blue;
+  }
+}
+
+.Settings__blueNotificationText {
+  margin: 2px 0 14px;
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: underline;
+  color: $ghosty-blue;
+  cursor: pointer;
+
+  &.disabled {
+    text-decoration: none;
+    color: $medium-grey;
+    pointer-events: none;
+  }
+}
+
+.Settings__comingSoon {
+  margin: 7px 0;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  color: $dark-grey;
+}
+
+.Settings__footer {
+  background-color: $opaque-background-white;
+  border-top: 1px solid $dark-grey;
+  height: $footer-height;
+}
+
+.Settings__accountBadge {
+  width: 100%;
+  height: 60px;
+
+  &.gradient {
+    background: $background-button-gradient;
+  }
+}
+
+.Settings__insightsBadge {
+  margin: 18px 38.6px 0 13px;
+  width: 59.4px;
+  height: 29.6px;
+
+  &.white {
+    margin-top: 0;
+  }
+}
+
+.Settings__badgeText {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: left;
+  color: $white;
+}
+
+.Settings__footerSettingContainer {
+  margin: 17px 0 0 13px;
+
+  &.clickable {
+    cursor: pointer;
+  }
+}
+
+.Settings__footerIcon {
+  margin-right: 13px;
+  width: 18px;
+  height: 18px;
+}
+
+.Settings__footerText {
+  margin: 0;
+  font-weight: 700;
+  font-size: 13px;
+  color: $dark-grey;
+}
+
+.Settings__signOut {
+  margin: 43px 0 43px 13px;
+  font-style: normal;
+  color: $dark-grey;
+  cursor: pointer;
+}
+
+.Settings__secondaryPage {
+  padding-left: 13px;
+  width: 100%;
+  font-size: 12px;
+  text-align: left;
+  color: $dark-grey;
+}
+
+.Settings__backButton {
+  position: relative;
+  top: 8px;
+  left: -2px;
+  margin-bottom: 30px;
+  width: 60px;
+  cursor: pointer;
+
+  img {
+    transform: rotate(90deg);
+    margin: 0 4px 0 0;
+    width: 12px;
+    height: 6.5px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.Settings__primaryPageLink {
+  font-size: 12px;
+  text-decoration: none;
+  color: $ghosty-blue;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.Settings__secondaryPageTitle {
+  width: 260px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.Settings__secondaryPageInternalLink {
+  color: $ghosty-blue;
+  cursor: pointer;
+}
+
+.Settings__secondaryPageLink {
+  text-decoration: none;
+  color: $ghosty-blue;
+}
+
+.Settings--smallVerticalMargin {
+  margin: 3px 0;
+}
+
+.Settings--marginTop {
+  margin-top: 30px;
+}

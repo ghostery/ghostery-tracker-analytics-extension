@@ -1,0 +1,178 @@
+@import '../../utils/scss/color-variables.scss';
+
+.TrackerListItem {
+  margin: 1px 2px;
+  border: 1px solid transparent;
+
+  &.expanded {
+    padding-bottom: 10px;
+  }
+
+  &.highlighted {
+    border: 1px solid $ghosty-blue;
+  }
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.TrackerListItem__trackerInformation {
+  width: 250px;
+
+  &.showGraph {
+    margin-right: 3px;
+    min-width: 300px;
+  }
+}
+
+.TrackerListItem__header {
+  background-color: $opaque-background-dark;
+  height: 50px;
+  cursor: pointer;
+
+  &.showGraph {
+    height: 62px;
+  }
+}
+
+.TrackerListItem__star {
+  position: relative;
+  top: -17px;
+  left: 7px;
+  margin-right: 10px;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+
+  &.small {
+    top: -13px;
+  }
+}
+
+.TrackerListItem__circle {
+  margin: 0 18px 0 22px;
+  border-radius: 28px;
+  width: 28px;
+  height: 28px;
+
+  &.green {
+    border: 3px solid $info-green;
+  }
+
+  &.yellow {
+    border: 3px solid $info-yellow;
+  }
+
+  &.red {
+    border: 3px solid $info-red;
+  }
+
+  &.small {
+    margin: 0 15px 0 12px;
+  }
+}
+
+.TrackerListItem__circleText {
+  font-size: 15.8px;
+}
+
+.TrackerListItem__stats {
+  width: 190px;
+  font-size: 11px;
+
+  &.small {
+    width: 160px;
+    font-size: 9px;
+  }
+
+  span {
+    height: 25px;
+  }
+}
+
+.TrackerListItem__statsHeader {
+  margin: 0;
+  font-weight: 600;
+}
+
+.TrackerListItem__statsInfo {
+  p {
+    margin: 9px 0 0;
+  }
+
+  &.small > p {
+    margin: 6px 0 0;
+  }
+}
+
+.TrackerListItem__trackerSize {
+  width: 90px;
+
+  &.small {
+    width: 75px;
+  }
+}
+
+.TrackerListItem__requestList {
+  display: none;
+
+  &.expanded {
+    display: inline;
+  }
+
+  &.small {
+    padding-top: 4px;
+  }
+}
+
+.TrackerListItem__request {
+  padding-top: 1px;
+  font-size: 11px;
+  color: $ghosty-blue;
+
+  &.empty {
+    padding-left: 51px;
+  }
+
+  &.small {
+    padding-top: 0;
+    font-size: 9px;
+    line-height: 1px;
+  }
+
+  &.small:first-of-type {
+    margin-top: 5px;
+  }
+}
+
+.TrackerListItem__requestName {
+  margin-left: 97px;
+  cursor: pointer;
+
+  > img {
+    margin-right: 7px;
+    display: none;
+  }
+
+  &.small {
+    margin-left: 51px;
+  }
+
+  &.small > p {
+    margin: 5px;
+  }
+
+  &.hovered {
+    margin-left: 77px;
+    font-weight: bold;
+
+    > img {
+      display: block;
+    }
+
+    &.small {
+      margin-left: 31px;
+    }
+  }
+}

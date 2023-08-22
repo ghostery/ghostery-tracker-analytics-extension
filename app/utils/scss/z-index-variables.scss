@@ -1,0 +1,17 @@
+$z-index-back: 1;
+$z-index-lowest: 100;
+$z-index-lower: 200;
+$z-index-low: 300;
+$z-index-medium: 400;
+$z-index-high: 500;
+$z-index-higher: 600;
+$z-index-highest: 700;
+$z-index-front: 1000;
+$z-index-max: 2147483647;
+
+$z-index-see-details-link: $z-index-lowest;
+$z-index-page-events-container: $z-index-lowest;
+$z-index-tooltips: $z-index-high;
+$z-index-toast: $z-index-front;
+$z-index-access-denied-overlay: $z-index-highest;
+$z-index-access-denied-brand-icon: calc(#{ $z-index-highest } + 1);

@@ -1,0 +1,48 @@
+@import '../../utils/scss/color-variables.scss';
+
+.ThemedToggle {
+  p {
+    margin: 0;
+    font-size: 10px;
+  }
+}
+
+.ThemedToggle__button {
+  background-color: $silver;
+  border: 1px solid $silver;
+  padding: 5px 8px 6px;
+  width: 30px;
+  height: 13px;
+  color: $dark-grey;
+  cursor: pointer;
+
+  &:first-of-type {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 9px;
+    padding-right: 7px;
+  }
+
+  &:last-of-type {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-left: 7px;
+    padding-right: 9px;
+  }
+
+  &.clicked {
+    box-shadow: inset 1px 0 6px $opaque-background-medium;
+    background-color: $white;
+    border: 1px solid $white;
+    color: $ghosty-blue;
+  }
+
+  &.icons {
+    padding: 6px 8px 5px;
+    height: 8px;
+  }
+
+  p {
+    text-align: center;
+  }
+}

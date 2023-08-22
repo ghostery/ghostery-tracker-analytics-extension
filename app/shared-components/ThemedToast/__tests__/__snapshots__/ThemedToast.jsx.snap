@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/ThemedToast/ Snapshot test with shallow ThemedToast should render 1`] = `
+<div
+  className="ThemedToast d-flex justify-content-between align-items-center show initialLoad"
+>
+  <div
+    className="d-flex"
+  >
+    <p>
+      toastText
+    </p>
+  </div>
+  <img
+    alt="Close Toast"
+    className="ThemedToast__closeButton"
+    onClick={[Function]}
+    src={
+      Array [
+        undefined,
+      ]
+    }
+  />
+</div>
+`;

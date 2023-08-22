@@ -1,0 +1,74 @@
+// Shades of BLUE
+$ghosty-blue: #00aef0;
+$light-blue: #d9edf7;
+$topaz-blue: #2b5993;
+$relaxed-blue: #2f7492;
+$relaxed-blue-darker: #31708f;
+$dark-grey-blue: #31373d;
+$almost-black-blue: #070e18;
+
+// WHITE to BLACK
+$white: #fff;
+$off-white: #f1f1f1;
+$very-light-grey: #eee;
+$light-grey: #e0e0e0;
+$silver: #c0c0c0;
+$medium-grey: #979797;
+$dark-grey: #4a4a4a;
+$darker-grey: #32383c;
+$black: #000;
+$medium-light-grey: #e7ecee;
+
+// GREEN, YELLOW, and RED (for graphs and Tracker List)
+$info-green: #9ecc42;
+$info-yellow: #ffc063;
+$info-red: #be4948;
+
+// Shades of RED
+$light-red: #ede0e2;
+
+// Colors for each WhoTracks.me tracker category
+$advertising-violet: #cd5acf;
+$analytics-sky-blue: #87d7ef;
+$essential-pale-orange: #fc9734;
+$social-blue: #388ee8;
+$comments-teal: #43b7c5;
+$customer-yellow-orange: #fdc257;
+$adult-pink: #ecafc2;
+$unknown-purple: #8459a5;
+$audio-video-orange: #ef671e;
+
+// Miscellaneous
+$pulsar-purple: #f0f;
+$opaque-pulsar-purple: rgba($pulsar-purple, .5);
+$halfway-along-background-gradient: #257bb8;
+
+// Opaque backgrounds
+$opaque-background: rgba($black, .45);
+$opaque-background-light: rgba($black, .3);
+$opaque-background-medium: rgba($black, .4);
+$opaque-background-half: rgba($black, .5);
+$opaque-background-dark: rgba($black, .7);
+$opaque-background-darker: rgba($black, .9);
+$opaque-background-darkest: rgba($black, .96);
+$opaque-background-grey: rgba($white, .12);
+$opaque-background-white: rgba($white, .3);
+$opaque-background-white-lighter: rgba($white, .1);
+$opaque-background-off-white: rgba(232, 233, 239, .97);
+$opaque-ghosty-blue: rgba($ghosty-blue, .5);
+$opaque-relaxed-blue-background: rgba($relaxed-blue, .96);
+$opaque-tooltip-background: rgba(224, 224, 224, .95);
+$opaque-line-background: rgba(255, 255, 255, .3);
+
+// Full transparency
+$transparent: rgba($white, 0);
+
+// Gradients
+$background-button-gradient: linear-gradient(to right, $topaz-blue, $ghosty-blue);
+$background-gradient: linear-gradient(to bottom right, $dark-grey-blue, $relaxed-blue);
+$background-gradient-transparent: linear-gradient(
+  to right,
+  $opaque-background-darkest,
+  $opaque-relaxed-blue-background
+);
+$foreground-gradient: linear-gradient(to right, $ghosty-blue, $almost-black-blue);

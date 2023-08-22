@@ -1,0 +1,42 @@
+/* ~~ADDITIONAL CUSTOM OVERRIDES~~
+   ========================================================================== */
+
+/**
+* Fix aliasing issues to avoid fonts rendering improperly.
+*/
+
+@import '../../utils/scss/color-variables.scss';
+
+html,
+body,
+h3,
+p,
+div {
+  line-height: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: $white;
+}
+
+text {
+  font-family: OpenSans, Helvetica, Arial, sans-serif;
+}
+
+h1 { font-size: 1.5rem;}
+h2 { font-size: 1.125rem}
+h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+h4 { font-size: 0.75rem;}
+h5 { font-size: 0.5625rem;}
+h6 { font-size: 0.5625rem;}
+p { font-size: 0.75rem; }

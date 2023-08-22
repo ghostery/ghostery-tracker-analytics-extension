@@ -1,0 +1,168 @@
+@import '../../../utils/scss/color-variables.scss';
+
+.AccountPanel {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: inherit;
+  max-height: 100vh;
+  font-weight: 700;
+  font-size: 15px;
+  font-style: normal;
+  text-align: left;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+
+.AccountPanel__backArrow {
+  transform: rotate(90deg);
+  padding: 5px 0 0 5px;
+  width: 12px;
+  height: 6.5px;
+
+  + p {
+    margin: 0;
+  }
+}
+
+.AccountPanel__title {
+  margin: 0 17px;
+}
+
+.AccountPanel__form {
+  margin: 17px;
+  font-size: 13px;
+
+  &.compressed {
+    margin: 0 17px;
+  }
+}
+
+.AccountPanel__links {
+  margin: 24px 17px;
+  justify-content: flex-end;
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: underline;
+
+  &.compressed {
+    margin: 24px 17px 8px;
+  }
+
+  &.centerAlign {
+    margin: -10px;
+    justify-content: center;
+  }
+
+  &.leftAlign {
+    margin: 17px 17px 40px;
+    justify-content: flex-start;
+  }
+}
+
+.AccountPanel__linksInner {
+  color: inherit;
+  cursor: pointer;
+}
+
+.AccountPanel__inputLabel {
+  margin: 19px 0 8px;
+  width: 100%;
+
+  &.error {
+    color: $info-red;
+  }
+}
+
+.AccountPanel__inputField {
+  margin: 8px 0 0;
+  box-sizing: border-box;
+  border: 1px solid $medium-grey;
+  border-radius: 4px;
+  padding: .5rem;
+  width: 100%;
+  height: 33px;
+  display: block;
+
+  &.error {
+    border: 1px solid $info-red;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $ghosty-blue;
+  }
+}
+
+.AccountPanel__message {
+  &.error {
+    justify-content: flex-start;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: italic;
+    color: $info-red;
+  }
+}
+
+.AccountPanel__consentInput {
+  margin: 10px 0 0;
+}
+
+.AccountPanel__consentBoxContainer {
+  padding-top: 1px;
+  height: 13px;
+  cursor: pointer;
+}
+
+.AccountPanel__consentBox {
+  margin: 2px 1px 0;
+  border: 1px solid $dark-grey-blue;
+  border-radius: 2px;
+  width: 9px;
+  height: 9px;
+
+  &.error {
+    border: 1px solid $info-red;
+  }
+}
+
+.AccountPanel__consentText {
+  margin: -2px 0 0 5px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.73;
+
+  &.error {
+    color: $info-red;
+  }
+
+  > a {
+    color: $relaxed-blue-darker;
+  }
+}
+
+.AccountPanel__buttonContainer {
+  margin: 45px 0 30px;
+  justify-content: center;
+
+  &.compressed {
+    margin: 17px 35px;
+  }
+}
+
+.AccountPanel__button {
+  background: $background-button-gradient;
+  border-radius: 4px;
+  padding: 8px 28px;
+  width: auto;
+  height: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $white;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}

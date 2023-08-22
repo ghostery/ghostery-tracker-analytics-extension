@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/Header/ Snapshot tests with shallow Header component should render 1`] = `
+<Bootstrap(undefined)
+  className="Header d-flex justify-content-between"
+>
+  <div
+    className="d-flex align-items-center"
+  >
+    <NavbarBrand
+      className="Header__logo d-flex align-items-center"
+    >
+      <img
+        alt="Insights by Ghostery Icon"
+        src={
+          Array [
+            undefined,
+          ]
+        }
+      />
+    </NavbarBrand>
+  </div>
+  <p
+    className="Header__freeTrialDays"
+  >
+    1
+    <span>
+       trial day left.
+    </span>
+    <span>
+       
+    </span>
+    <span
+      className="Header__link"
+      onClick={[Function]}
+    >
+      Upgrade to Plus now.
+    </span>
+  </p>
+  <div
+    className="d-flex align-items-center"
+  >
+    <Connect(LiveFreezeToggle)
+      disabled={false}
+      panel={false}
+    />
+    <OverlayTrigger
+      container={null}
+      defaultOverlayShown={false}
+      delay={
+        Object {
+          "show": 500,
+        }
+      }
+      overlay={
+        <Tooltip
+          className="tooltipLeft"
+          placement="right"
+        >
+          Export tracker list (CSV) and raw page data/settings (JSON)
+        </Tooltip>
+      }
+      placement="bottom"
+      trigger={
+        Array [
+          "hover",
+          "focus",
+        ]
+      }
+    >
+      <svg
+        className="Header__exportIcon"
+        height="20"
+        onClick={[Function]}
+        width="18"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M9.9 3.233v9.061c0 .522-.4.944-.9.944-.497 0-.9-.423-.9-.944V3.23L7.083 4.298a.864.864 0 0 1-1.266-.006.98.98 0 0 1-.006-1.332L8.368.274A.864.864 0 0 1 8.996 0l.006.003c.229 0 .456.091.627.27l2.557 2.687a.973.973 0 0 1-.005 1.332.87.87 0 0 1-1.267.006L9.9 3.233zm-8.1 14.26h14.4V10.87c0-.52.4-.941.9-.941.497 0 .9.424.9.94v7.574c0 .26-.1.495-.262.666a.881.881 0 0 1-.637.276H.9a.875.875 0 0 1-.634-.275.97.97 0 0 1-.265-.667V10.87c0-.52.4-.941.9-.941.497 0 .9.424.9.94v6.624z"
+          fill="#FFF"
+        />
+      </svg>
+    </OverlayTrigger>
+    <Dropdown
+      alignRight={true}
+      navbar={false}
+      onClick={[Function]}
+      onToggle={[Function]}
+      show={false}
+    >
+      <Bootstrap(DropdownToggle)
+        as={[Function]}
+      />
+    </Dropdown>
+  </div>
+</Bootstrap(undefined)>
+`;

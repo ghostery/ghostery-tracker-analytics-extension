@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-componenets/AccessDeniedOverlay/ Snapshot tests with shallow render AccessDeniedOverlay component should render with state: Not Signed In 1`] = `
+<Fragment>
+  <div
+    className="AccessDeniedOverlay d-flex justify-content-center"
+  >
+    <div
+      className="AccessDeniedOverlay__container d-flex align-items-center flex-column"
+      style={
+        Object {
+          "maxWidth": "500",
+        }
+      }
+    >
+      <div
+        className="flex-grow-1"
+      />
+      <img
+        alt="Verify Email"
+        className="AccessDeniedOverlay__image emailNotVerified"
+      />
+      <div
+        className="AccessDeniedOverlay__header reduceMargin"
+      >
+        Please verify your account to proceed.
+      </div>
+      <div
+        className="AccessDeniedOverlay__text"
+      >
+        Click the verification link that was sent to test@gmail.com and refresh Insights.
+      </div>
+      <div
+        className="AccessDeniedOverlay__button emailSent reduceMargin"
+        onClick={[Function]}
+      >
+        Sent
+      </div>
+      <div
+        className="AccessDeniedOverlay__link"
+        onClick={[Function]}
+      >
+        Sign Out
+      </div>
+      <a
+        className="AccessDeniedOverlay__link"
+        href="mailto: support-insights@ghostery.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        support-insights@ghostery.com
+      </a>
+      <div
+        className="flex-grow-1"
+      />
+    </div>
+  </div>
+</Fragment>
+`;

@@ -1,0 +1,54 @@
+/*!
+ * Info Center CSS
+ *
+ * Insights by Ghostery
+ * https://www.ghostery.com/insights/
+ *
+ * Copyright 2019 Ghostery, Inc. All rights reserved.
+ * See https://www.ghostery.com/eula for license agreement.
+ */
+@import '../../utils/scss/normalize.scss';
+@import '../../utils/scss/overrides.scss';
+@import '../../utils/scss/roboto.scss';
+@import '../../utils/scss/color-variables.scss';
+@import '../../shared-components/Tooltips/tooltips.scss';
+
+.InfoCenter__container {
+  position: relative;
+  background-image: $background-gradient;
+  overflow-x: hidden;
+  height: 100vh;
+  font-family: Roboto;
+}
+
+.InfoCenter__backgroundCurve {
+  position: absolute;
+  top: -30px;
+  opacity: 0;
+  width: 100%;
+  transition: opacity .3s;
+
+  &.show {
+    opacity: .4;
+  }
+}
+
+.InfoCenter__content {
+  position: relative;
+  margin-top: 10px;
+  width: 850px;
+}
+
+.InfoCenter__logo {
+  position: absolute;
+  margin-top: 5px;
+}
+
+h1,
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 14px;
+}

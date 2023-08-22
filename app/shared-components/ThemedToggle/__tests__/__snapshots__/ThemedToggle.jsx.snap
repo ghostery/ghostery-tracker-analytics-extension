@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/ThemedToggle/ Snapshot test with shallow ThemedToggle should render 1`] = `
+<div
+  className="ThemedToggle d-flex"
+>
+  <div
+    className="ThemedToggle__button"
+    key="tooltip-sans-fake children element"
+    onClick={[Function]}
+  >
+    <div>
+      fake children element
+    </div>
+  </div>
+</div>
+`;

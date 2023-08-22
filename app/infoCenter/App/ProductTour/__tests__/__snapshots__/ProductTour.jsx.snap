@@ -1,0 +1,542 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/infoCenter/ProductTour Snapshot tests with react-test-renderer ProductTour component should render 1`] = `
+<div
+  className="ProductTour"
+>
+  <div
+    className="d-flex justify-content-between"
+  >
+    <div
+      className="ProductTour__featureContainer"
+    >
+      <h2>
+        Welcome to Ghostery Insights
+      </h2>
+      <p>
+        Insights offers comprehensive, real-time analysis into tracker activity on a page. Learn about the dashboard and features below.
+      </p>
+      <div
+        className="ProductTour__feature"
+        key="description-1"
+      >
+        <div
+          className="ProductTour__featureHeader d-flex align-items-center justify-content-between"
+          onClick={[Function]}
+        >
+          <h2>
+            Tracker Request List
+          </h2>
+          <img
+            alt="Expand or Collapse Tracker Request List"
+            className="ProductTour__caret"
+            src="/dist/images/app/caret-down.svg"
+          />
+        </div>
+        <Collapse
+          appear={false}
+          dimension="height"
+          getDimensionValue={[Function]}
+          in={false}
+          mountOnEnter={false}
+          timeout={300}
+          unmountOnExit={false}
+        >
+          <div
+            className="ProductTour__featureDescription"
+          >
+            <div>
+              <p>
+                This list displays all trackers and scripts operating on a website. It includes size and latency data, and can be expanded to show request URLs. “Favorite” a tracker to pin it to the top of your list whenever it appears on a page. You can manage favorites in your Settings panel.
+              </p>
+            </div>
+          </div>
+        </Collapse>
+      </div>
+      <div
+        className="ProductTour__feature"
+        key="description-2"
+      >
+        <div
+          className="ProductTour__featureHeader d-flex align-items-center justify-content-between"
+          onClick={[Function]}
+        >
+          <h2>
+            Tracker Timeline
+          </h2>
+          <img
+            alt="Expand or Collapse Tracker Timeline"
+            className="ProductTour__caret"
+            src="/dist/images/app/caret-down.svg"
+          />
+        </div>
+        <Collapse
+          appear={false}
+          dimension="height"
+          getDimensionValue={[Function]}
+          in={false}
+          mountOnEnter={false}
+          timeout={300}
+          unmountOnExit={false}
+        >
+          <div
+            className="ProductTour__featureDescription"
+          >
+            <div>
+              <p>
+                The Timeline visualizes each tracker’s ping behavior in real-time as a page loads. Hover over data points in an expanded visual to view script size and latency information. From the header, select which page events to show, and toggle between a linear or logarithmic display.
+              </p>
+            </div>
+          </div>
+        </Collapse>
+      </div>
+      <div
+        className="ProductTour__feature"
+        key="description-3"
+      >
+        <div
+          className="ProductTour__featureHeader d-flex align-items-center justify-content-between"
+          onClick={[Function]}
+        >
+          <h2>
+            Tracker Distribution Graph
+          </h2>
+          <img
+            alt="Expand or Collapse Tracker Distribution Graph"
+            className="ProductTour__caret"
+            src="/dist/images/app/caret-down.svg"
+          />
+        </div>
+        <Collapse
+          appear={false}
+          dimension="height"
+          getDimensionValue={[Function]}
+          in={false}
+          mountOnEnter={false}
+          timeout={300}
+          unmountOnExit={false}
+        >
+          <div
+            className="ProductTour__featureDescription"
+          >
+            <div>
+              <p>
+                The Tracker Distribution Chart displays trackers by size and latency in a scatterplot, making it easy to identify outliers at a glance. Hover over a data point to see details, and click to view corresponding tracker data in the Timeline.
+              </p>
+            </div>
+          </div>
+        </Collapse>
+      </div>
+      <div
+        className="ProductTour__feature"
+        key="description-4"
+      >
+        <div
+          className="ProductTour__featureHeader d-flex align-items-center justify-content-between"
+          onClick={[Function]}
+        >
+          <h2>
+            Page Latency Graph
+          </h2>
+          <img
+            alt="Expand or Collapse Page Latency Graph"
+            className="ProductTour__caret"
+            src="/dist/images/app/caret-down.svg"
+          />
+        </div>
+        <Collapse
+          appear={false}
+          dimension="height"
+          getDimensionValue={[Function]}
+          in={false}
+          mountOnEnter={false}
+          timeout={300}
+          unmountOnExit={false}
+        >
+          <div
+            className="ProductTour__featureDescription"
+          >
+            <div>
+              <p>
+                The Page Latency graph breaks down the initial load of a web page into categories of processes organized by events, such as the time spent making a request to a server and receiving a response.
+              </p>
+            </div>
+          </div>
+        </Collapse>
+      </div>
+      <div
+        className="ProductTour__feature"
+        key="description-5"
+      >
+        <div
+          className="ProductTour__featureHeader d-flex align-items-center justify-content-between"
+          onClick={[Function]}
+        >
+          <h2>
+            Page Size Graph
+          </h2>
+          <img
+            alt="Expand or Collapse Page Size Graph"
+            className="ProductTour__caret"
+            src="/dist/images/app/caret-down.svg"
+          />
+        </div>
+        <Collapse
+          appear={false}
+          dimension="height"
+          getDimensionValue={[Function]}
+          in={false}
+          mountOnEnter={false}
+          timeout={300}
+          unmountOnExit={false}
+        >
+          <div
+            className="ProductTour__featureDescription"
+          >
+            <div>
+              <p>
+                The Page Size panel shows how much of your local memory is being allocated for certain types of data (eg. images, scripts, fonts, etc.). This graph is updated in real time as you interact with any web page.
+              </p>
+            </div>
+          </div>
+        </Collapse>
+      </div>
+      <div
+        className="ProductTour__feature"
+        key="description-6"
+      >
+        <div
+          className="ProductTour__featureHeader d-flex align-items-center justify-content-between"
+          onClick={[Function]}
+        >
+          <h2>
+            Live/Freeze Mode
+          </h2>
+          <img
+            alt="Expand or Collapse Live/Freeze Mode"
+            className="ProductTour__caret"
+            src="/dist/images/app/caret-down.svg"
+          />
+        </div>
+        <Collapse
+          appear={false}
+          dimension="height"
+          getDimensionValue={[Function]}
+          in={false}
+          mountOnEnter={false}
+          timeout={300}
+          unmountOnExit={false}
+        >
+          <div
+            className="ProductTour__featureDescription"
+          >
+            <div>
+              <p>
+                In Live mode, data is streaming to the dashboard in real-time. You can set the toggle to Freeze to pause data streaming and capture a snapshot of tracker activity at that point in time. Toggle back to Live to resume.
+              </p>
+            </div>
+          </div>
+        </Collapse>
+      </div>
+      <div
+        className="ProductTour__feature"
+        key="description-7"
+      >
+        <div
+          className="ProductTour__featureHeader d-flex align-items-center justify-content-between"
+          onClick={[Function]}
+        >
+          <h2>
+            Global Trends
+          </h2>
+          <img
+            alt="Expand or Collapse Global Trends"
+            className="ProductTour__caret"
+            src="/dist/images/app/caret-down.svg"
+          />
+        </div>
+        <Collapse
+          appear={false}
+          dimension="height"
+          getDimensionValue={[Function]}
+          in={false}
+          mountOnEnter={false}
+          timeout={300}
+          unmountOnExit={false}
+        >
+          <div
+            className="ProductTour__featureDescription"
+          >
+            <div>
+              <p>
+                The Global Trends tab lists privacy-related statistics and trends over time for trackers and websites documented in our web-profiling database. Click a tracker to expand it, and hover over the line graphs to view historical stats. You can arrange trackers by favorites, prevalence, or category using the sort options at the top of the list. 
+              </p>
+            </div>
+          </div>
+        </Collapse>
+      </div>
+    </div>
+    <div
+      className="ProductTour__imageContainer d-flex align-items-center justify-content-center"
+    >
+      <div
+        className="ProductTour__imageDisplay image-0 show"
+        key="image-0"
+      >
+        <img
+          alt="Feature 0"
+          className="ProductTour__image"
+          src="/dist/images/info-center/welcome-to-insights.png"
+        />
+        <div
+          className="ProductTour__pulsarContainer"
+        />
+      </div>
+      <div
+        className="ProductTour__imageDisplay image-1"
+        key="image-1"
+      >
+        <img
+          alt="Feature 0"
+          className="ProductTour__image"
+          src="/dist/images/info-center/tracker-request-list.png"
+        />
+        <div
+          className="ProductTour__pulsarContainer"
+        />
+      </div>
+      <div
+        className="ProductTour__imageDisplay image-2"
+        key="image-2"
+      >
+        <img
+          alt="Feature 0"
+          className="ProductTour__image"
+          src="/dist/images/info-center/tracker-timeline.png"
+        />
+        <div
+          className="ProductTour__pulsarContainer"
+        >
+          <OverlayTrigger
+            defaultOverlayShown={false}
+            key="imageTwoPulsarZero"
+            overlay={
+              <Tooltip
+                className="ProductTour__tooltipPurpleBorder tooltipLeft"
+                placement="right"
+              >
+                Toggle between linear or logarithmic scaling
+              </Tooltip>
+            }
+            placement="auto"
+            trigger={
+              Array [
+                "hover",
+                "focus",
+              ]
+            }
+          >
+            <div
+              className="ProductTour__pulsar imageTwoPulsarZero d-flex justify-content-center align-items-center"
+            >
+              <div />
+            </div>
+          </OverlayTrigger>
+          <OverlayTrigger
+            defaultOverlayShown={false}
+            key="imageTwoPulsarOne"
+            overlay={
+              <Tooltip
+                className="ProductTour__tooltipPurpleBorder tooltipLeft"
+                placement="right"
+              >
+                Select page events you want displayed on the timelie alongside tracker request pings
+              </Tooltip>
+            }
+            placement="auto"
+            trigger={
+              Array [
+                "hover",
+                "focus",
+              ]
+            }
+          >
+            <div
+              className="ProductTour__pulsar imageTwoPulsarOne d-flex justify-content-center align-items-center"
+            >
+              <div />
+            </div>
+          </OverlayTrigger>
+        </div>
+      </div>
+      <div
+        className="ProductTour__imageDisplay image-3"
+        key="image-3"
+      >
+        <img
+          alt="Feature 0"
+          className="ProductTour__image"
+          src="/dist/images/info-center/tracker-distribution-graph.png"
+        />
+        <div
+          className="ProductTour__pulsarContainer"
+        >
+          <OverlayTrigger
+            defaultOverlayShown={false}
+            key="imageThreePulsarZero"
+            overlay={
+              <Tooltip
+                className="ProductTour__tooltipPurpleBorder tooltipLeft"
+                placement="right"
+              >
+                Hover over or click a data point to view size, latency, and timeline information
+              </Tooltip>
+            }
+            placement="auto"
+            trigger={
+              Array [
+                "hover",
+                "focus",
+              ]
+            }
+          >
+            <div
+              className="ProductTour__pulsar imageThreePulsarZero d-flex justify-content-center align-items-center"
+            >
+              <div />
+            </div>
+          </OverlayTrigger>
+        </div>
+      </div>
+      <div
+        className="ProductTour__imageDisplay image-4"
+        key="image-4"
+      >
+        <img
+          alt="Feature 0"
+          className="ProductTour__image"
+          src="/dist/images/info-center/page-latency-graph.png"
+        />
+        <div
+          className="ProductTour__pulsarContainer"
+        />
+      </div>
+      <div
+        className="ProductTour__imageDisplay image-5"
+        key="image-5"
+      >
+        <img
+          alt="Feature 0"
+          className="ProductTour__image"
+          src="/dist/images/info-center/page-size-graph.png"
+        />
+        <div
+          className="ProductTour__pulsarContainer"
+        />
+      </div>
+      <div
+        className="ProductTour__imageDisplay image-6"
+        key="image-6"
+      >
+        <img
+          alt="Feature 0"
+          className="ProductTour__image"
+          src="/dist/images/info-center/live-freeze-mode.png"
+        />
+        <div
+          className="ProductTour__pulsarContainer"
+        />
+      </div>
+      <div
+        className="ProductTour__imageDisplay image-7"
+        key="image-7"
+      >
+        <img
+          alt="Feature 0"
+          className="ProductTour__image"
+          src="/dist/images/info-center/global-trends.png"
+        />
+        <div
+          className="ProductTour__pulsarContainer"
+        >
+          <OverlayTrigger
+            defaultOverlayShown={false}
+            key="imageSevenPulsarZero"
+            overlay={
+              <Tooltip
+                className="ProductTour__tooltipPurpleBorder tooltipLeft"
+                placement="right"
+              >
+                Sort the trackers by prevalence, category, or favorites for convenient viewing
+              </Tooltip>
+            }
+            placement="auto"
+            trigger={
+              Array [
+                "hover",
+                "focus",
+              ]
+            }
+          >
+            <div
+              className="ProductTour__pulsar imageSevenPulsarZero d-flex justify-content-center align-items-center"
+            >
+              <div />
+            </div>
+          </OverlayTrigger>
+          <OverlayTrigger
+            defaultOverlayShown={false}
+            key="imageSevenPulsarOne"
+            overlay={
+              <Tooltip
+                className="ProductTour__tooltipPurpleBorder tooltipLeft"
+                placement="right"
+              >
+                Web traffic trends over time are visualized by line graphs — hover to see statistics for a specific date
+              </Tooltip>
+            }
+            placement="auto"
+            trigger={
+              Array [
+                "hover",
+                "focus",
+              ]
+            }
+          >
+            <div
+              className="ProductTour__pulsar imageSevenPulsarOne d-flex justify-content-center align-items-center"
+            >
+              <div />
+            </div>
+          </OverlayTrigger>
+          <OverlayTrigger
+            defaultOverlayShown={false}
+            key="imageSevenPulsarTwo"
+            overlay={
+              <Tooltip
+                className="ProductTour__tooltipPurpleBorder tooltipLeft"
+                placement="right"
+              >
+                Expand a tracker to see granular information, such as associated websites and tracking methods used
+              </Tooltip>
+            }
+            placement="auto"
+            trigger={
+              Array [
+                "hover",
+                "focus",
+              ]
+            }
+          >
+            <div
+              className="ProductTour__pulsar imageSevenPulsarTwo d-flex justify-content-center align-items-center"
+            >
+              <div />
+            </div>
+          </OverlayTrigger>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

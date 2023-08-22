@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/FavoriteTrackersSearch/ Snapshot tests with shallow FavoriteTrackersSearch component should render 1`] = `
+<div
+  className="FavoriteTrackersSearch__favoriteSettingsTabContent"
+>
+  <div
+    className="FavoriteTrackersSearch__inputDropdownGroup"
+  >
+    <div
+      className="FavoriteTrackersSearch__favoriteTabHeader d-flex align-items-center justify-content-start"
+    >
+      <img
+        alt="Star icon"
+        className="FavoriteTrackersSearch__starIcon"
+        src={
+          Array [
+            undefined,
+          ]
+        }
+      />
+      <p>
+        Your Favorite Trackers
+      </p>
+    </div>
+    <InputGroup
+      className="FavoriteTrackersSearch__searchInputContainer"
+    >
+      <FormControl
+        className="FavoriteTrackersSearch__searchInput"
+        onChange={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search"
+      />
+    </InputGroup>
+    <div
+      className="FavoriteTrackersSearch__searchDropdown"
+      style={
+        Object {
+          "display": "block",
+        }
+      }
+    >
+      <div
+        className="FavoriteTrackersSearch__searchResult "
+        id="searchResult_78783743"
+        key="78783743"
+        onClick={[Function]}
+        trackerid="78783743"
+      />
+    </div>
+    <p
+      className="FavoriteTrackersSearch__favoriteText"
+    >
+      Favorited trackers appear at the top of your list when they are detected on a page.
+    </p>
+  </div>
+  <div
+    className="FavoriteTrackersSearch__starredList show panel"
+  >
+    <div
+      className="FavoriteTrackersSearch__starredTracker  d-flex justify-content-between align-items-center"
+      key="testing"
+    >
+      starred
+      <img
+        alt="Remove tracker from favorite list"
+        onClick={[Function]}
+        src={
+          Array [
+            undefined,
+          ]
+        }
+      />
+    </div>
+  </div>
+</div>
+`;

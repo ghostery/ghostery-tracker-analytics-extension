@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/licenses/App/License Snapshot tests with react-test-renderer License component should render 1`] = `
+<Fragment>
+  <div
+    className="License"
+  >
+    <div>
+      Module: test
+    </div>
+    <div>
+      <span>
+        Repository: 
+      </span>
+      <a
+        className="License__link"
+        href="test-repo"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span>
+          test-repo
+        </span>
+      </a>
+    </div>
+    <div>
+      License type(s): test-license
+    </div>
+    <div>
+      Publisher: test-publisher
+    </div>
+    <div>
+      Url: tst.com
+    </div>
+    <div>
+      Email: test@test.com
+    </div>
+    <div>
+      <div
+        className="License__textToggle"
+        onClick={[Function]}
+      >
+        License Text
+      </div>
+    </div>
+  </div>
+  <div
+    className="License__hr"
+  />
+</Fragment>
+`;

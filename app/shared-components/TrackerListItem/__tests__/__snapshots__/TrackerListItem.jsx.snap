@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/TrackerListItem/ Snapshot test with shallow TrackerListItem should render 1`] = `
+<div
+  className="TrackerListItem d-flex expanded highlighted"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="TrackerListItem__trackerInformation showGraph"
+  >
+    <div
+      className="TrackerListItem__header d-flex align-items-center justify-content-start showGraph"
+      onClick={[Function]}
+    >
+      <img
+        alt="Star Tracker"
+        className="TrackerListItem__star"
+        onClick={[Function]}
+        src={
+          Array [
+            undefined,
+          ]
+        }
+      />
+      <div
+        className="TrackerListItem__circle d-flex align-items-center justify-content-center latencyCategory"
+      >
+        <p
+          className="TrackerListItem__circleText"
+        >
+          1
+        </p>
+      </div>
+      <div
+        className="TrackerListItem__stats"
+      >
+        <p
+          className="TrackerListItem__statsHeader"
+        >
+          name
+        </p>
+        <div
+          className="TrackerListItem__statsInfo d-flex justify-content-start"
+        >
+          <p
+            className="TrackerListItem__trackerSize"
+          >
+            Size: size
+          </p>
+          <p>
+            Latency: latency
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="TrackerListItem__requestList expanded"
+    >
+      <div
+        className="TrackerListItem__request d-flex align-items-center justify-content-start"
+        key="tracker:id requestStart:1"
+      >
+        <OverlayTrigger
+          container={null}
+          defaultOverlayShown={false}
+          overlay={
+            <Tooltip
+              className="tooltipLeft"
+              placement="right"
+            >
+              requests.src
+            </Tooltip>
+          }
+          placement="right"
+          trigger={
+            Array [
+              "hover",
+              "focus",
+            ]
+          }
+        >
+          <div
+            className="TrackerListItem__requestName d-flex justify-content-start align-items-center"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <img
+              alt="More info hover: Average data usage by all trackers detected on the current page"
+              height="13"
+              src={
+                Array [
+                  undefined,
+                ]
+              }
+              width="10"
+            />
+            <p>
+              requests.src
+            </p>
+          </div>
+        </OverlayTrigger>
+      </div>
+    </div>
+  </div>
+  <Connect(TrackerTimelineGraph)
+    expanded={true}
+    firstTracker={true}
+    handleClick={[Function]}
+    latencyCategory="latencyCategory"
+    pageEventLinesHeight={1}
+    requests={
+      Array [
+        Object {
+          "endTime": 1,
+          "src": "requests.src",
+          "startTime": 1,
+        },
+      ]
+    }
+  />
+</div>
+`;

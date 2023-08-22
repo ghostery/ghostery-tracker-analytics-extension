@@ -1,0 +1,85 @@
+@import '../../utils/scss/color-variables.scss';
+@import '../../utils/scss/z-index-variables.scss';
+
+.ThemedToast {
+  visibility: visible;
+  position: absolute;
+  z-index: $z-index-toast;
+  top: 0;
+  left: 50%;
+  margin-left: -300px;
+  opacity: 0;
+  box-shadow: inset 1px 0 6px $opaque-background-medium;
+  background-color: $light-blue;
+  border-radius: 5px;
+  padding: 20px;
+  min-width: 600px;
+  font-weight: 600;
+  color: $relaxed-blue-darker;
+  transition: top .5s, opacity .5s;
+
+  &.initialLoad {
+    visibility: hidden;
+  }
+
+  p {
+    margin: 2px;
+    font-size: 14px;
+  }
+
+  &.show {
+    top: 30px;
+    opacity: 1;
+    transition: top .5s, opacity .5s;
+  }
+
+  &:not(.show) {
+    pointer-events: none;
+  }
+}
+
+.ThemedToast--boldText {
+  font-weight: 700;
+}
+
+.ThemedToast__closeButton {
+  width: 9px;
+  height: 10px;
+  cursor: pointer;
+
+  &.error {
+    position: relative;
+    left: 4px;
+  }
+}
+
+.ThemedToast--small {
+  position: absolute;
+  left: unset;
+  right: -5px;
+  box-shadow: unset;
+  padding: 10px 20px;
+  width: 235px;
+  min-width: unset;
+  font-weight: 700;
+
+  p {
+    font-size: 11px;
+  }
+
+  &.show {
+    top: 20px;
+  }
+
+  &.changePosition {
+    position: fixed;
+    left: unset;
+    right: 12px;
+    text-align: center;
+  }
+
+  &.error {
+    background-color: $light-red;
+    color: $info-red;
+  }
+}

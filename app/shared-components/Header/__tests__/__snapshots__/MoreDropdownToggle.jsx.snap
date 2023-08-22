@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/Header/MoreDropdownToggle Snapshot tests with shallow MoreDropdownToggle component should render 1`] = `
+<svg
+  className="Header__dropdownToggle d-inline-block align-top"
+  height="20"
+  onClick={[Function]}
+  viewBox="0 0 4 16"
+  width="10"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M0 0h4v4H0zm0 6h4v4H0zm0 6h4v4H0z"
+    fill="#FFF"
+    fillRule="evenodd"
+  />
+</svg>
+`;

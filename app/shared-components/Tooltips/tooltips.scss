@@ -1,0 +1,133 @@
+@import '../../utils/scss/color-variables.scss';
+@import '../../utils/scss/z-index-variables.scss';
+
+.tooltip {
+  position: fixed;
+  z-index: $z-index-tooltips;
+  pointer-events: none;
+
+  &.tooltip__panelTrackerList {
+    margin-bottom: -5px;
+  }
+
+  &.show {
+    opacity: .95;
+  }
+}
+
+.tooltip-inner {
+  background-color: $light-grey;
+  border-radius: 3px;
+  padding: 8px 15px;
+  font-family: OpenSans, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: $dark-grey;
+
+  .tooltipRight & {
+    text-align: right;
+  }
+
+  .tooltipLeft & {
+    text-align: left;
+  }
+
+  .tooltipCenter & {
+    text-align: center;
+  }
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=right] .arrow::before,
+.tooltip.bs-tooltip-right .arrow::before {
+  border-right-color: $light-grey;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.tooltip.bs-tooltip-top .arrow::before {
+  border-top-color: $light-grey;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.tooltip.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: $light-grey;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.tooltip.bs-tooltip-left .arrow::before {
+  border-left-color: $light-grey;
+}
+
+.Insights__tooltipBlack.bs-tooltip-auto[x-placement^=top] > .arrow::before,
+.Insights__tooltipBlack.bs-tooltip-top .arrow::before {
+  border-top-color: $black;
+}
+
+.Insights__tooltipBlack.bs-tooltip-auto[x-placement^=right] > .arrow::before,
+.Insights__tooltipBlack.bs-tooltip-right .arrow::before {
+  border-right-color: $black;
+}
+
+.Insights__tooltipBlack.bs-tooltip-auto[x-placement^=bottom] > .arrow::before,
+.Insights__tooltipBlack.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: $black;
+}
+
+.Insights__tooltipBlack.bs-tooltip-auto[x-placement^=left] > .arrow::before,
+.Insights__tooltipBlack.bs-tooltip-left .arrow::before {
+  border-left-color: $black;
+}
+
+.infoIcon {
+  cursor: pointer;
+}
+
+.Graph__tooltip {
+  position: fixed;
+  z-index: $z-index-tooltips;
+  opacity: 0;
+  box-shadow: none;
+  background: $opaque-tooltip-background;
+  border-radius: 3px;
+  padding: 7px 10px;
+  width: auto;
+  height: auto;
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: none;
+  color: $dark-grey;
+  pointer-events: none;
+
+  &.absolute {
+    position: absolute;
+  }
+}
+
+.Graph__tooltipCaret {
+  position: fixed;
+  z-index: $z-index-tooltips;
+  opacity: 0;
+  border-color: transparent transparent transparent $opaque-tooltip-background;
+  border-width: 6px;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  display: block;
+  content: '';
+  pointer-events: none;
+
+  &.downCaret {
+    border-color: $opaque-tooltip-background transparent transparent;
+  }
+
+  &.rightCaret {
+    border-color: transparent $opaque-tooltip-background transparent transparent;
+  }
+
+  &.absolute {
+    position: absolute;
+  }
+}

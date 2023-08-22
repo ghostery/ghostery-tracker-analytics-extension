@@ -1,0 +1,1057 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/infoCenter/Glossary Snapshot tests with react-test-renderer Glossary component should render 1`] = `
+<div
+  className="Glossary d-flex"
+>
+  <div
+    className="Glossary__header"
+  >
+    <h2>
+      Glossary of Terms
+    </h2>
+    <p>
+      Confused about an Insights feature or technical term? Navigate to an entry below to learn more.
+    </p>
+  </div>
+  <div
+    className="Glossary__content d-flex"
+  >
+    <div
+      className="Glossary__index d-flex flex-wrap align-items-start"
+    >
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active current"
+        onClick={[Function]}
+      >
+        A
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        B
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        C
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        D
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center"
+        onClick={[Function]}
+      >
+        E
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        F
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center"
+        onClick={[Function]}
+      >
+        G
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center"
+        onClick={[Function]}
+      >
+        H
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        I
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center"
+        onClick={[Function]}
+      >
+        J
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center"
+        onClick={[Function]}
+      >
+        K
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        L
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        M
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        N
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        O
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        P
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center"
+        onClick={[Function]}
+      >
+        Q
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        R
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        S
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        T
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        U
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center"
+        onClick={[Function]}
+      >
+        V
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        W
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center active"
+        onClick={[Function]}
+      >
+        X
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center"
+        onClick={[Function]}
+      >
+        Y
+      </p>
+      <p
+        className="Glossary__indexItem d-flex justify-content-center"
+        onClick={[Function]}
+      >
+        Z
+      </p>
+    </div>
+    <div
+      className="Glossary__entries d-flex flex-column align-items-start"
+    >
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          App Cache (Page Latency Category)
+        </h2>
+        <p>
+          The amount of time a website, for which you have no information stored locally, takes to store information to your lcocal cache.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Beacon (Page Size Category)
+        </h2>
+        <p>
+          Requests sent through the Beacon API. The Beacon interface is used to schedule an asynchronous and non-blocking request to a web server.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Blue Summary Bar
+        </h2>
+        <p>
+          The blue summary bar is the blue-colored widget that appears on each page with Insights. Drag and drop to customize its position; it can also be disabled or enabled in your settings. It summarizes basic page information and includes icons that open the Insights bottom panel and Insights tab.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Bottom Panel
+        </h2>
+        <p>
+          The Insights bottom panel refers to the dashboard that can be opened at the bottom of a web page you visiting. It is opened and closed by clicking the Insights browser icon or "open panel" icon on the blue summary bar.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          connectEnd (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns an "unsigned long long" representing the moment, in miliseconds since the UNIX epoch, where the connection is to a network is opened. If the transport layer reports an error and the connection establishment is started again, the last connection establisment end time is given. If a persistent connection is used, the value will be the same as "PerformanceTiming.fetchStart". A connection is considered as opened when all secure connection handshake, or SOCKS authentication, is terminated.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          connectStart (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns an "unsigned long long" representing the moment, in miliseconds since the UNIX epoch, where the request to open a connection is sent to the network. If the transport layer reports an error and the connection establishment is started again, the last connection establisment start time is given. If a persistent connection is used, the value will be the same as "PerformanceTiming.fetchStart".
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Cookies
+        </h2>
+        <p>
+          A cookie is a small piece of data sent from a website and stored on the user's computer by the user's web browser. Cookies allow websites to record browsing activity in order to remember information for future use.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          CSP Report (Page Size Category)
+        </h2>
+        <p>
+          Requests sent to the report-uri given in the Content-Security-Policy header, when an attempt to violate the policy is detected.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          DNS (Page Latency Category)
+        </h2>
+        <p>
+          The amount of time it takes for to do a domain lookup for a website for which you do not have the IP address stored.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          domainLookupEnd (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns an "unsigned long long" representing the moment, in miliseconds since the UNIX epoch, where the domain lookup is finished. If a persistent connection is used, or the information is stored in a cache or a local resource, the value will be the same as "PerformanceTiming.fetchStart".
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          domainLookupStart (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns an "unsigned long long" representing the moment, in miliseconds since the UNIX epoch, where the domain lookup starts. If a persistent connection is used, or the information is stored in a cache or a local resource, the value will be the same as "PerformanceTiming.fetchStart".
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          domComplete (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns a timestamp representing the time value equal to the time immediately before the user agent sets the current document readiness of the current document to complete.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          domContentLoadedEventEnd (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns a timestamp representing the time value equal to the time immediately after the current document's "DOMContentLoaded" event completes.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          domContentLoadedEventStart (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns a timestamp representing the time value equal to the time immediately before the user agent fires the "DOMContentLoaded" event at the current document.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          domInteractive (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns a timestamp representing the time value equal to the time immediately before the user agent sets the current document readiness of the current document to interactive.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          domLoading (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns an "unsigned long long" representing the moment, in miliseconds since the UNIX epoch, when the parser started its work, that is when its "Document.readyState" changes to "loading" and the corresponding "readystatechange" event is thrown.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          fetchStart (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns an "unsigned long long" representing the moment, in miliseconds since the UNIX epoch, the browser is ready to fetch the document using an HTTP request. This moment is before the check to any application cache.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Fingerprinting
+        </h2>
+        <p>
+          A device, machine, or browser "fingerprint" is information collected about a remote computing device for the purpose of identification. Fingerprints can be used to uniquely identify individual users or devices even when cookies are turned off.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Font (Page Size Category)
+        </h2>
+        <p>
+          Web fonts loaded for a @font-face CSS rule.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Image (Page Size Category)
+        </h2>
+        <p>
+          Resources loaded to be rendered as image, except for imageset on browsers that support that type (see browser compatibility below).
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Insights Tab
+        </h2>
+        <p>
+          The Insights tab refers to the detailed dashboard that can be opened in a new tab. This dashboard offers features not found on the Insights bottom panel, such as a tracker timeline, global trends information, and expandable cards. It is opened and closed by clicking the Insights tab icon on the blue summary bar.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Latency
+        </h2>
+        <p>
+          Latency refers to the time taken for a signal to travel from source to destination. In other words, latency measures delay; high latency generally means slower results, and low latency yields faster results.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Linear
+        </h2>
+        <p>
+          On the tracker timeline, you may select to view activity on a linear scale. This means that equidistant intervals on the x-axis represent equal time values, and in this case, directly reflect the passage of time.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          loadEventEnd (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns a timestamp representing the time value equal to the time when the load event of the current document is completed.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          loadEventStart (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns a timestamp representing the time value equal to the time immediately before the load event of the current document is fired.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Logarithmic
+        </h2>
+        <p>
+          On the tracker timeline, you may select to view activity on a logarithmic scale, where equidistant intervals on x-axis represent exponentially increasing amounts of time. This display is useful for condensing & analyzing activity over long segments of time.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Main Frame (Page Size Category)
+        </h2>
+        <p>
+          Top-level documents loaded into a tab. (A top-level folder is one that appears at the root of a drive.)
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Media (Page Size Category)
+        </h2>
+        <p>
+          Resources loaded by a  &lt;video&gt; or  &lt;audio&gt; element.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Miscellaneous (Page Size Category)
+        </h2>
+        <p>
+          Resources that aren't covered by any other available type.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          navigationStart (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns an "unsigned long long" representing the moment, in miliseconds since the UNIX epoch, right after the prompt for unload terminates on the previous document in the same browsing context. If there is no previous document, this value will be the same as "PerformanceTiming.fetchStart".
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Object (Page Size Category)
+        </h2>
+        <p>
+          Resources loaded by an &lt;object&gt; or &lt;embed&gt; element. Browsers that don't have a dedicated "Object Subrequest" type also label subsequent requests sent by the plugin as "Object".
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          onLoad (Page Latency Category)
+        </h2>
+        <p>
+          The amount of time it takes to load the document.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Ping (Page Size Category)
+        </h2>
+        <p>
+          Requests sent to the URL given in a hyperlink's ping attribute, when the hypelink is followed. Browsers that don't have a dedicated beacon type also label requests sent through the Beacon API as "Ping".
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Processing (Page Latency Category)
+        </h2>
+        <p>
+          The amount of time between when the document's initial ready state is changed (ie. when the parser starts it's work) and when the load event for the current document is fired.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          redirectEnd (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns an "unsigned long long" representing the moment, in miliseconds since the UNIX epoch, the last HTTP redirect is completed, that is, when the last byte of the HTTP response has been received. If there is no redirect, or if one of the redirect is not of the same origin, the value returned is 0.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          redirectStart (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns an "unsigned long long" representing the moment, in miliseconds since the UNIX epoch, the first HTTP redirect starts. If there is no redirect, or if one of the redirect is not of the same origin, the value returned is 0.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Request
+        </h2>
+        <p>
+          A web request is a message sent from a local machine to retrieve, save, modify, or delete data on a remote server. Trackers use requests, often multiple ones, to persist information about you.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Request (Page Latency Category)
+        </h2>
+        <p>
+          The amount of time between when a request to a web server or local cache is made and when you receive the first byte of a response.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          requestStart (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns an "unsigned long long" representing the moment, in miliseconds since the UNIX epoch, when the browser sent the request to obtain the actual document, from the server or from a cache. If the transport layer fails after the start of the request and the connection is reopened, this property will be set to the time corresponding to the new request.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Response (Page Latency Category)
+        </h2>
+        <p>
+          The amount of time it takes to receive every byte of information from the web server's or local cache's response.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          responseEnd (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns an "unsigned long long" representing the moment, in miliseconds since the UNIX epoch, when the browser received the last byte of the response, or when the connection is closed if this happened first, from the server from a cache or from a local resource.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          responseStart (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns an "unsigned long long" representing the moment, in miliseconds since the UNIX epoch, when the browser received the first byte of the response from the server, cache, or local resource.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Script (Page Size Category)
+        </h2>
+        <p>
+          Code that is loaded to be executed by a &lt;script&gt; element or running in a Worker.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          secureConnectionStart (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns an "unsigned long long" representing the moment, in miliseconds since the UNIX epoch, where the secure connection handshake starts. If no such connection is requested, it returns 0.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Stylesheet (Page Size Category)
+        </h2>
+        <p>
+          CSS stylesheets loaded to describe the representation of a document.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Sub Frame (Page Size Category)
+        </h2>
+        <p>
+          Documents loaded into an &lt;iframe&gt; or &lt;frame&gt; element.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          TCP (Page Latency Category)
+        </h2>
+        <p>
+          The amount of time between when a request to open a connection to the network is made and when the connection is opened.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          Tracker
+        </h2>
+        <p>
+          A tracker, or tracking pixel, is a piece of a code that loads on a website used to obtain information on user behavior and page activity. This data can be stored, shared, sold, further profiled, and used for retargeting.
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          unloadEventEnd (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns a timestamp representing the time value equal to the time immediately after the user agent finishes the unload event of the previous document. If there is no previous document, this property value is 0.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          unloadEventStart (Page Event)
+        </h2>
+        <p>
+          A read-only property that returns a timestamp representing the time value equal to the time immediately before the user agent starts the unload event of the previous document. If there is no previous document, this property returns 0.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          WebSocket (Page Size Category)
+        </h2>
+        <p>
+          Requests initiating a connection to a server through the WebSocket API.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+        <div
+          className="Glossary__termDivider"
+        />
+      </div>
+      <div
+        className="Glossary__entry"
+      >
+        <h2>
+          XMLHttpRequest (Page Size Category)
+        </h2>
+        <p>
+          Requests sent by an XMLHttpRequest object or through the Fetch API.
+          <span
+            onClick={[Function]}
+          >
+            *
+          </span>
+        </p>
+      </div>
+      <div
+        className="Glossary__disclaimer d-flex flex-wrap align-items-center justify-content-start"
+      >
+        <p>
+          *These definitions were pulled from the 
+          <a
+            href="https://developer.mozilla.org"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Mozilla Developer Network
+          </a>
+           website, where the content is licensed under the 
+          <a
+            href="https://creativecommons.org/licenses/by-sa/2.5/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            CC-BY-SA 2.5 license
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

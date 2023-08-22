@@ -1,0 +1,506 @@
+@import '../../../utils/scss/color-variables.scss';
+@import '../../../utils/scss/category-background-colors.scss';
+@import '../../../utils/scss/z-index-variables.scss';
+
+@mixin TrackerListHeader--labelText {
+  margin: 0 8px;
+  font-weight: 600;
+}
+
+.TrackerListHeader {
+  position: relative;
+
+  &.trackerListExpanded {
+    margin-top: 30px;
+  }
+}
+
+.TrackerListHeader__expand {
+  position: absolute;
+  top: -17px;
+  width: 100%;
+  height: 17px;
+  cursor: pointer;
+
+  .TrackerListHeader__expandCaret {
+    display: none;
+  }
+}
+
+.TrackerListHeader__expandHoverToggle {
+  position: relative;
+  top: 7px;
+  width: 12px;
+  height: 2px;
+}
+
+.TrackerListHeader__expand:hover {
+  .TrackerListHeader__expandDisplay {
+    position: absolute;
+    width: 100%;
+  }
+
+  .TrackerListHeader__expandHalfCircle {
+    background-color: $ghosty-blue;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 31px;
+    height: 15px;
+  }
+
+  .TrackerListHeader__expandCaret {
+    position: relative;
+    top: 7px;
+    width: 9px;
+    height: 5px;
+    display: inline;
+
+    &.flipped {
+      top: 6px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .TrackerListHeader__expandBar {
+    background-color: $ghosty-blue;
+    width: 100%;
+    height: 3px;
+  }
+}
+
+.TrackerListHeader__trackerListTitle {
+  padding-left: 10px;
+  width: 300px;
+  font-weight: 600;
+}
+
+.TrackerListHeader__timelineOptions {
+  width: 630px;
+}
+
+.TrackerListHeader__legendTitle {
+  font-weight: 600;
+}
+
+.TrackerListHeader__linLogToggle > p {
+  margin-right: 25px;
+}
+
+.TrackerListHeader__dropdown {
+  position: relative;
+  width: 60px;
+
+  &.pageEvents {
+    top: -13px;
+    left: -26px;
+  }
+}
+
+.TrackerListHeader__dropdownToggle {
+  position: absolute;
+  border-radius: 2px;
+  width: 120px;
+  height: 25px;
+  font-size: 11px;
+  cursor: pointer;
+
+  &.open {
+    z-index: 1;
+  }
+
+  &.filters {
+    top: 8px;
+    left: 17px;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    > .TrackerListHeader__dropdownTitle {
+      text-decoration: underline;
+    }
+  }
+}
+
+.TrackerListHeader__dropdownTitle {
+  margin-right: 6px;
+  font-weight: 600;
+}
+
+.TrackerListHeader__dropdownCaret {
+  margin-right: 15px;
+  border-top: 6px solid $white;
+  border-bottom: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  transition: border-top .15s linear, border-bottom .15s linear;
+
+  &.open {
+    border-top: 0;
+    border-bottom: 6px solid $white;
+  }
+
+  &.TrackerListHeader--sortCaret {
+    position: absolute;
+    left: 185px;
+  }
+}
+
+.TrackerListHeader__dropdownMenu {
+  position: absolute;
+  z-index: $z-index-max;
+  background-color: $opaque-background-darker;
+  border: 1px solid $medium-grey;
+  border-radius: 2px;
+  padding: 34px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 11px;
+  color: $white;
+  transition: opacity .2s ease;
+
+  &:not(.show) {
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.pageEvents {
+    top: -8px;
+    right: -31px;
+    width: 374px;
+    height: 312px;
+  }
+
+  &.filters {
+    width: 397px;
+    height: 127px;
+  }
+}
+
+.TrackerListHeader__dropdownMenuItem {
+  margin: 8px;
+  height: 10px;
+}
+
+.TrackerListHeader__filterMenuWrapper {
+  height: 78px;
+}
+
+.TrackerListHeader__dropdownBox {
+  margin: 1px;
+  border: 1px solid $white;
+  border-radius: 1px;
+  width: 9px;
+  height: 9px;
+  cursor: pointer;
+
+  &.disabled {
+    border-color: $dark-grey;
+    cursor: default;
+  }
+}
+
+.TrackerListHeader__dropdownText {
+  margin: 0 0 2px 7px;
+  font-size: 10px;
+
+  &.disabled {
+    color: $dark-grey;
+  }
+}
+
+.TrackerListHeader__dropdownCheck {
+  cursor: pointer;
+}
+
+.TrackerListHeader__dropdownBottomButtons {
+  margin: 10px 0 0 9px;
+}
+
+.TrackerListHeader__dropdownBottomButton {
+  margin-right: 12px;
+  border: 1px solid $white;
+  border-radius: 4px;
+  width: 102px;
+  height: 27px;
+  font-weight: 600;
+  font-size: 9px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.TrackerListHeader__listingControls {
+  border-top: 1px solid $black;
+  width: 100%;
+  height: 40px;
+}
+
+.TrackerListHeader__searchAndSort {
+  width: 510px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.TrackerListHeader__filter {
+  border-left: 1px solid $black;
+}
+
+.TrackerListHeader__search {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.TrackerListHeader__searchLabel {
+  @include TrackerListHeader--labelText;
+}
+
+.TrackerListHeader__searchInputContainer {
+  position: relative;
+}
+
+.TrackerListHeader__searchInput {
+  background-color: $black;
+  outline: none;
+  border: 1px solid $black;
+  border-radius: 4px;
+  overflow: hidden;
+  padding-left: 28px; // for the magnifying glass icon
+  padding-right: 28px; // for the X icon
+  width: 122px;
+  height: 27px;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  color: $white;
+
+  &:hover {
+    border: 1px solid $white;
+  }
+
+  &:focus {
+    border: 1px solid $white;
+  }
+}
+
+.TrackerListHeader__searchIcon {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+}
+
+.TrackerListHeader__searchXIcon {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.TrackerListHeader__searchDropdown {
+  position: absolute;
+  z-index: $z-index-max;
+  background-color: $black;
+  border: 1px solid #979797;
+  border-radius: 4px;
+  overflow-y: scroll;
+  min-width: 178px;
+  max-height: 125px;
+}
+
+.TrackerListHeader__searchDropdownItem {
+  padding-left: 24px;
+  padding-right: 10px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 11px;
+
+  &.selected {
+    background-color: rgba(255, 255, 255, .12);
+  }
+
+  &:hover {
+    cursor: default;
+  }
+
+  > .exact-substring-match {
+    font-weight: normal;
+  }
+}
+
+.TrackerListHeader__filterScrollingListContainer {
+  position: relative;
+  margin-left: 135px;
+  overflow: hidden;
+  width: 304px;
+  height: 100%;
+}
+
+.TrackerListHeader__filterScrollingList {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.TrackerListHeader__filterScrollingListItemContainer {
+  height: 26px;
+  flex-shrink: 0;
+
+  &:last-of-type {
+    padding-right: 40px;
+  }
+}
+
+.TrackerListHeader__filterScrollingListItem {
+  margin-right: 10px;
+  background: $opaque-background-darker;
+  border-radius: 3px;
+  height: 100%;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.TrackerListHeader__colorBand {
+  margin-right: 5px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  width: 5px;
+  height: 100%;
+}
+
+.TrackerListHeader__xIcon {
+  margin: 0 7px 0;
+  width: 7px;
+  height: 7px;
+  cursor: pointer;
+}
+
+.TrackerListHeader__boxShadowOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: inset -80px 0 25px -25px $black;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  &.showLeftShadow {
+    box-shadow: inset 45px 0 25px -25px $black, inset -80px 0 25px -25px $black;
+  }
+}
+
+.TrackerListHeader__leftRightCarets {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.TrackerListHeader__caretContainer {
+  width: 20px;
+  height: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $opaque-background-white-lighter;
+  }
+}
+
+.TrackerListHeader__caret {
+  &.left {
+    transform: rotate(90deg);
+  }
+
+  &.right {
+    transform: rotate(270deg);
+  }
+}
+
+.TrackerListHeader__sortSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.TrackerListHeader__sortLabel {
+  @include TrackerListHeader--labelText;
+}
+
+.TrackerListHeader__sortDropdownWrapper {
+  position: relative;
+}
+
+.TrackerListHeader__sortDropdownContainer {
+  position: absolute;
+  z-index: $z-index-max;
+  top: -15px;
+  width: 205px;
+  font-size: 11px;
+}
+
+.TrackerListHeader__sortToggle {
+  position: relative;
+  background-color: $black;
+  outline: none;
+  border: 1px solid $black;
+  border-radius: 4px;
+  width: 205px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 11px;
+  cursor: pointer;
+
+  &.focused {
+    border: 1px solid $white;
+  }
+
+  &:hover {
+    border: 1px solid $white;
+  }
+}
+
+.TrackerListHeader__sortIcon {
+  padding-left: 10px;
+  width: 14px;
+  height: 12px;
+}
+
+.TrackerListHeader__sortText {
+  margin-left: 8px;
+}
+
+.TrackerListHeader--bold {
+  font-weight: bold;
+}
+
+.TrackerListHeader__sortDropdown {
+  background-color: $black;
+  border: 1px solid $medium-grey;
+  border-radius: 4px;
+  width: 205px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 11px;
+}
+
+.TrackerListHeader__sortDropdownItem {
+  padding: 5px 0 5px 33px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $opaque-background-grey;
+  }
+
+  &:last-of-type {
+    padding-bottom: 8px;
+  }
+}

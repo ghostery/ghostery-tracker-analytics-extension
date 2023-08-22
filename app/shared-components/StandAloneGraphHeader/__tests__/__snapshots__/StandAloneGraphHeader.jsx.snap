@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/shared-components/StandAloneGraphHeader/ Snapshot tests with shallow StandAloneGraphHeader component should render 1`] = `
+<div
+  className="d-flex"
+>
+  <div
+    className="StandAloneGraphHeader__mainInfo"
+  >
+    <div
+      className="StandAloneGraphHeader__header d-flex justify-content-between align-items-center"
+    >
+      <div
+        className="d-flex align-items-center"
+      >
+        <h3>
+          title
+        </h3>
+        <OverlayTrigger
+          container={null}
+          defaultOverlayShown={false}
+          overlay={
+            <Tooltip
+              className="tooltipLeft"
+              placement="right"
+            >
+              tooltipText
+            </Tooltip>
+          }
+          placement="auto"
+          trigger={
+            Array [
+              "hover",
+              "focus",
+            ]
+          }
+        >
+          <img
+            alt="More info hover: tooltipText"
+            className="infoIcon"
+            height="16"
+            src={
+              Array [
+                undefined,
+              ]
+            }
+            width="16"
+          />
+        </OverlayTrigger>
+      </div>
+    </div>
+  </div>
+</div>
+`;

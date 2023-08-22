@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/insights/App/OverviewTab Snapshot tests with react-test-renderer OverviewTab component should render 1`] = `
+<div
+  className="d-flex flex-column align-items-center"
+>
+  <div
+    className="OverviewTab__trackerTimeline"
+  >
+    <Connect(TrackerList)
+      showGraph={true}
+      showHeader={true}
+      trackerListExpanded={true}
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,37 @@
+@import '../../../utils/scss/color-variables.scss';
+
+.advertising {
+  background: $advertising-violet;
+}
+
+.site_analytics {
+  background: $analytics-sky-blue;
+}
+
+.essential {
+  background: $essential-pale-orange;
+}
+
+.social_media {
+  background: $social-blue;
+}
+
+.comments {
+  background: $comments-teal;
+}
+
+.customer_interaction {
+  background: $customer-yellow-orange;
+}
+
+.adult_content {
+  background: $adult-pink;
+}
+
+.unknown {
+  background: $unknown-purple;
+}
+
+.audio_video_player {
+  background: $audio-video-orange;
+}

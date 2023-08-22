@@ -1,0 +1,14 @@
+## Build Files
+/dist
+/build
+
+## Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+#OSX
+.DS_Store
+
+#Licenses
+/tools/licenses/licenses.json
