@@ -3,7 +3,7 @@
 ## Disclaimer
 :warning: **Tracker Analytics is no longer in development or maintenance.** :warning:
 
-The source code is open source under the [MIT License](????) [placeholder].
+The source code is open source under the [MPLv2 License](https://github.com/ghostery/ghostery-tracker-analytics-extension/blob/main/LICENSE).
 
 ## About
 
