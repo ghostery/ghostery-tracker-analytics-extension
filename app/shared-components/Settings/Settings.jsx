@@ -6,7 +6,6 @@ import Nav from 'react-bootstrap/Nav';
 
 import Globals from '../../../src/classes/Globals';
 import FavoriteTrackersSearch from './FavoriteTrackersSearch';
-import AccountPanel from './AccountPanel';
 import './Settings.scss';
 
 const {
@@ -48,10 +47,8 @@ class Settings extends Component {
       closeDropdown,
       panel,
       messageCreators,
-      userInfo,
       showBlueBar,
       showToasts,
-      actions,
       isPageNotScanned,
     } = this.props;
     const { view, viewLinks } = this.state;
@@ -71,16 +68,6 @@ class Settings extends Component {
       'align-items-center',
       { on: showToasts },
     );
-    const badgeContainerClasses = ClassNames(
-      'Settings__accountBadge',
-      'd-flex',
-      'align-items-center',
-      { gradient: userInfo.freeTrial },
-    );
-    const badgeImageClasses = ClassNames(
-      'Settings__insightsBadge',
-      { white: userInfo.freeTrial },
-    );
     const blueBarToggleText = showBlueBar ? 'On' : 'Off';
     const toastToggleText = showToasts ? 'On' : 'Off';
     const displayLinks = viewLinks[view];
@@ -89,8 +76,7 @@ class Settings extends Component {
       <React.Fragment>
         {!isPageNotScanned && (
           <div className="Settings">
-            {!userInfo.signedIn && <AccountPanel panel={panel} />}
-            {userInfo.signedIn && view === 'mainTabs' && (
+            {view === 'mainTabs' && (
               <div className="Settings__main d-flex flex-column">
                 <img
                   src={[chrome.extension.getURL('dist/images/shared/x-icon.svg')]}
@@ -172,29 +158,6 @@ class Settings extends Component {
                     </div>
                   </Tab.Container>
                   <div className="Settings__footer d-flex flex-column align-items-start">
-                    <div className={badgeContainerClasses}>
-                      <img
-                        alt="Insights badge"
-                        src={[chrome.extension.getURL(`/dist/images/shared/insights-badge${userInfo.freeTrial ? '-white' : ''}.svg`)]}
-                        className={badgeImageClasses}
-                      />
-                      {userInfo.freeTrial && (
-                        <div className="Settings__badgeText">
-                          You are on a free trial.
-                        </div>
-                      )}
-                    </div>
-                    <div
-                      className="Settings__footerSettingContainer d-flex justify-content-start clickable"
-                      onClick={() => this.handleClickSetView('support')}
-                    >
-                      <img
-                        alt="Support"
-                        src={[chrome.extension.getURL('/dist/images/shared/support-icon.svg')]}
-                        className="Settings__footerIcon"
-                      />
-                      <p className="Settings__footerText clickable">Support</p>
-                    </div>
                     <div
                       className="Settings__footerSettingContainer d-flex justify-content-start clickable"
                       onClick={() => this.handleClickSetView('about')}
@@ -206,38 +169,11 @@ class Settings extends Component {
                       />
                       <p className="Settings__footerText">About</p>
                     </div>
-                    {userInfo.signedIn && (
-                      <React.Fragment>
-                        <div
-                          className="Settings__footerSettingContainer d-flex justify-content-start clickable"
-                          onClick={() => messageCreators.openAccountPage()}
-                        >
-                          <img
-                            alt="User"
-                            src={[chrome.extension.getURL('/dist/images/shared/user-icon.svg')]}
-                            className="Settings__footerIcon"
-                          />
-                          <p className="Settings__footerText">
-                            {userInfo.email || 'No Email On File'}
-                          </p>
-                        </div>
-                        <p
-                          className="Settings__signOut"
-                          onClick={() => {
-                            actions.closeToast();
-                            messageCreators.logout();
-                            messageCreators.sendMetrics({ type: 'sign_out', insightsView: panel ? '2' : '3' });
-                          }}
-                        >
-                          Sign out
-                        </p>
-                      </React.Fragment>
-                    )}
                   </div>
                 </div>
               </div>
             )}
-            {userInfo.signedIn && displayLinks && (
+            {displayLinks && (
               <div className="Settings__secondaryPage">
                 <div
                   className="Settings__backButton d-flex align-items-center"
@@ -317,7 +253,6 @@ Settings.propTypes = {
   panel: PropTypes.bool,
   closeDropdown: PropTypes.func.isRequired,
   userInfo: PropTypes.shape({
-    signedIn: PropTypes.bool.isRequired,
     freeTrial: PropTypes.bool.isRequired,
     email: PropTypes.string.isRequired,
   }).isRequired,

@@ -19,7 +19,6 @@
 
 import isEmpty from 'lodash.isempty';
 import throttle from 'lodash.throttle';
-import Account from './Account';
 import RequestsByTracker from './RequestsByTracker';
 import RequestsByType from './RequestsByType';
 import Tabs from './Tabs';
@@ -189,9 +188,6 @@ class TabDetails {
     if (panel) {
       port.postMessage({ type: 'RemovePanel' });
       this._tabDetails[tabId].windowScripts.panel = false;
-    } else if (Account.eligibleForFreeTrial()) {
-      Account.startFreeTrial()
-        .finally(() => this._finishOpeningPanel(tabId, port));
     } else {
       this._finishOpeningPanel(tabId, port);
     }
@@ -210,12 +206,7 @@ class TabDetails {
 
     const { opened, appTabId } = this._tabDetails[tabId].appDetails;
     if (!opened) {
-      if (Account.eligibleForFreeTrial()) {
-        Account.startFreeTrial()
-          .finally(() => this._finishOpeningApp(tabId, insightsInnerTab));
-      } else {
-        this._finishOpeningApp(tabId, insightsInnerTab);
-      }
+      this._finishOpeningApp(tabId, insightsInnerTab);
     }
     if (appTabId) {
       Tabs.focusTabById(appTabId, insightsInnerTab);

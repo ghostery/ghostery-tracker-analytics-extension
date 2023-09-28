@@ -22,16 +22,12 @@
 
 /* eslint no-unused-vars: 0 */
 
-import throttle from 'lodash.throttle';
 import Messaging from './Messaging';
 import BrowserAction from './BrowserAction';
-import Account from './Account';
 import TabDetails from './TabDetails';
 import RequestDetails from './RequestDetails';
-import Tabs from './Tabs';
 import Globals from './Globals';
 import Metrics from './Metrics';
-import Settings from './Settings';
 import { isValidTopLevelNavigation, processUrl, isValidUrl } from '../utils/utils';
 import { log } from '../utils/common';
 
@@ -62,25 +58,6 @@ class EventHandlers {
   onMessage(message, sender, sendResponse) {
     Messaging.onMessage(message, sender, sendResponse);
   }
-
-  // Event Handlers for chrome.cookies
-  onCookieChanged({ removed, cookie, cause }) {
-    const { domain, name } = cookie;
-
-    const cookiesToWatch = ['user_id', 'access_token'];
-    if (domain.includes(GHOSTERY_DOMAIN) && cookiesToWatch.includes(name)) {
-      if (name === 'user_id' && !removed && cause === 'explicit') {
-        Metrics.ping({ type: 'sign_in_success' });
-      }
-      this.throttleWatchedCookieChanged();
-    }
-  }
-
-  throttleWatchedCookieChanged = throttle(() => {
-    Account.checkInsightsUser().then(() => {
-      Messaging.updateApp(Account.getUserInfo());
-    });
-  }, 100, { leading: false, trailing: true });
 
   // Event Handlers for chrome.browserAction
   onClicked({ id, url }) {

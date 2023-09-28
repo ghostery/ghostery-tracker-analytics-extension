@@ -162,13 +162,7 @@ class Account {
    * @returns {boolean}
    */
   showEndOfFreeTrialPopup() {
-    return (
-      Settings.get('freeTrialStatus') === 'expired'
-      && !Settings.get('endOfFreeTrialPopupAcknowledged')
-      && this.isSignedIn()
-      && !this._freeTrial
-      && !this._allowInsights
-    );
+    return false;
   }
 
   /**
@@ -252,7 +246,6 @@ class Account {
     return {
       email: this._getUserEmail(),
       emailVerified: this._isEmailVerified(),
-      signedIn: this.isSignedIn(),
       insightsUser: this._isInsightsUser(),
       freeTrial: this._freeTrial,
       freeTrialDaysRemaining: this._freeTrialDaysRemaining(),

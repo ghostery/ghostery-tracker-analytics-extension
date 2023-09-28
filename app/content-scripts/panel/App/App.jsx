@@ -9,7 +9,6 @@ import TrackerDistributionGraph from '../../../shared-components/TrackerDistribu
 import PageLatencyGraph from '../../../shared-components/PageLatencyGraph';
 import PageSizeGraph from '../../../shared-components/PageSizeGraph';
 import ThemedToast from '../../../shared-components/ThemedToast';
-import AccessDeniedOverlay from '../../../shared-components/AccessDeniedOverlay';
 import './styles.scss';
 
 import onMessage from '../../../store/messages/messageListeners';
@@ -53,7 +52,6 @@ class App extends Component {
     const { handleClick } = this;
     return (
       <React.Fragment>
-        <AccessDeniedOverlay maxWidth="520px" />
         <div className="Panel__container d-flex justify-content-center">
           <div className="Panel__content" ref={this.panelRef}>
             <Header panel>

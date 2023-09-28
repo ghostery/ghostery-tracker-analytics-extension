@@ -10,7 +10,6 @@
  * Insights by Ghostery
  */
 
-import Account from './Account';
 import TabDetails from './TabDetails';
 import Tabs from './Tabs';
 
@@ -38,11 +37,7 @@ class BrowserButton {
 
   _getIcon(id, url, pendingUrl) {
     let icon = '';
-    if (!Account.isSignedIn()) {
-      icon = '_lock';
-    } else if (Account.isTrialExpired()) {
-      icon = '_endOfTrialAlert';
-    } else if (url && url.startsWith('chrome-extension')) {
+    if (url && url.startsWith('chrome-extension')) {
       icon = '_reloadAlert';
     } else if (pendingUrl && pendingUrl.startsWith('chrome-extension')) {
       icon = '';

@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Navbar from 'react-bootstrap/Navbar';
 import './PageNotScannedOverlay.scss';
-import ClassNames from 'classnames';
 
 const PageNotScannedOverlay = (props) => {
-  const { isPageNotScanned, signedIn } = props;
+  const { isPageNotScanned } = props;
   const logoUrlRoot = 'dist/images/logo-icons';
   const pageNotScannedIcon = `${logoUrlRoot}/icon_pageNotScanned.svg`;
   const logoIcon = `${logoUrlRoot}/insights-white-text-beta.svg`;
@@ -24,17 +23,12 @@ const PageNotScannedOverlay = (props) => {
     link: { copy: 'Reach out to Support' },
   };
 
-  const logoClassNames = ClassNames('PageNotScannedOverlay__logo', {
-    signedIn,
-  });
-
   return (
     <React.Fragment>
       {isPageNotScanned && (
         <div className="PageNotScannedOverlay">
           <div className="PageNotScannedOverlay__container d-flex align-items-center flex-column">
             <Navbar.Brand
-              className={logoClassNames}
               href="https://www.ghostery.com/products/"
               target="_blank"
               rel="noopener noreferrer"
@@ -80,7 +74,6 @@ const PageNotScannedOverlay = (props) => {
 
 PageNotScannedOverlay.propTypes = {
   isPageNotScanned: PropTypes.bool.isRequired,
-  signedIn: PropTypes.bool.isRequired,
 };
 
 export default PageNotScannedOverlay;

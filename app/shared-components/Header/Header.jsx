@@ -49,19 +49,7 @@ class Header extends Component {
   }
 
   _showDropdown() {
-    const {
-      userInfo: {
-        freeTrial,
-        signedIn,
-        insightsUser,
-      },
-    } = this.props;
     const { dropdownToggle } = this.state;
-
-    if (!signedIn) return true;
-
-    if (!insightsUser && !freeTrial) return false;
-
     return dropdownToggle;
   }
 

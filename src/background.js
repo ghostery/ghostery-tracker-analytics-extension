@@ -11,7 +11,6 @@
  */
 
 import EventHandlers from './classes/EventHandlers';
-import Account from './classes/Account';
 import Settings from './classes/Settings';
 import BrowserAction from './classes/BrowserAction';
 import Metrics from './classes/Metrics';
@@ -40,10 +39,6 @@ function initializeEventListeners() {
     .addListener(EventHandlers.onMessage.bind(EventHandlers));
   // chrome.runtime.onMessageExternal
   // chrome.runtime.onRestartRequired
-
-  // All Cookie events listed
-  chrome.cookies.onChanged
-    .addListener(EventHandlers.onCookieChanged.bind(EventHandlers));
 
   // All BrowserAction event listed (only 1: onClicked)
   log('Initializing the BrowserAction onClicked event listener');
@@ -177,7 +172,6 @@ function sendInitialMetrics() {
 function init() {
   Promise.all([
     Settings.init().then(initializeVersioning),
-    Account.checkInsightsUser(),
     BugDb.init(false),
   ]).then(() => {
     initializeEventListeners();
@@ -192,6 +186,5 @@ function init() {
 init();
 
 if (Globals.DEBUG) {
-  window._Account = Account;
   window._Settings = Settings;
 }
