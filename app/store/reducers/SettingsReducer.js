@@ -6,7 +6,6 @@ import {
 const initialState = {
   userInfo: {
     email: '',
-    signedIn: true,
     insightsUser: true,
     freeTrial: false,
     emailVerified: false,

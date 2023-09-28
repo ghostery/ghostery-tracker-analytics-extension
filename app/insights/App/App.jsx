@@ -7,7 +7,6 @@ import Header from '../../shared-components/Header';
 import PageStats from '../../shared-components/PageStats';
 import ThemedTabs from '../../shared-components/ThemedTabs';
 import ThemedToast from '../../shared-components/ThemedToast';
-import AccessDeniedOverlay from '../../shared-components/AccessDeniedOverlay';
 import PageNotScannedOverlay from './PageNotScannedOverlay';
 import OverviewTab from './OverviewTab';
 import GlobalTrendsTab from './GlobalTrendsTab';
@@ -36,13 +35,6 @@ class App extends Component {
     }
   }
 
-  componentDidUpdate(prevProps) {
-    const { signedIn } = this.props;
-    if (signedIn !== prevProps.signedIn) {
-      this.containerRef.scrollTop = 0;
-    }
-  }
-
   handleClick = () => {
     window.port.postMessage({ type: 'FocusParentTab' });
   }
@@ -55,19 +47,17 @@ class App extends Component {
   }
 
   render() {
-    const { parentTabUrl, signedIn } = this.props;
+    const { parentTabUrl } = this.props;
 
     const containerClassNames = ClassNames(
       'App__container',
       'd-flex',
       'justify-content-center',
-      { noScroll: !signedIn },
     );
 
     return (
       <React.Fragment>
         <PageNotScannedOverlay />
-        <AccessDeniedOverlay maxWidth="440px" isFullPage />
         <div
           className={containerClassNames}
           ref={(node) => { this.containerRef = node; }}
@@ -112,7 +102,6 @@ App.propTypes = {
   messageCreators: PropTypes.shape({
     sendMetrics: PropTypes.func.isRequired,
   }).isRequired,
-  signedIn: PropTypes.bool.isRequired,
 };
 
 export default App;

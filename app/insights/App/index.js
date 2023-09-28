@@ -34,7 +34,6 @@ const mapStateToProps = state => ({
   parentTabUrl: state.PageInfoReducer.parentTabUrl,
   showToasts: state.SettingsReducer.localSettings.showToasts,
   messageCreators: { sendMetrics },
-  signedIn: state.SettingsReducer.userInfo.signedIn,
 });
 
 const mapDispatchToProps = dispatch => ({

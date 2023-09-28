@@ -11,7 +11,6 @@
 
 import TabDetails from './TabDetails';
 import RequestDetails from './RequestDetails';
-import Account from './Account';
 import Globals from './Globals';
 import Settings from './Settings';
 import BrowserAction from './BrowserAction';
@@ -33,7 +32,6 @@ class Messaging {
         TabDetails.setPort(tabId, 'window', port);
         port.onMessage.addListener(this.onPortMessageWindow.bind(this));
         port.onDisconnect.addListener(this.onPortDisconnectWindow.bind(this));
-        Account.checkAccessCookie();
         break;
       }
       case 'app': {
@@ -43,7 +41,6 @@ class Messaging {
         TabDetails.setAppDetails(tabId, { appTabId });
         port.onMessage.addListener(this.onPortMessageApp.bind(this));
         port.onDisconnect.addListener(this.onPortDisconnectApp.bind(this));
-        Account.checkAccessCookie();
         break;
       }
       default: {
@@ -68,26 +65,6 @@ class Messaging {
           url: message.data,
           active: true,
         });
-        break;
-      }
-      case 'Login': {
-        Account.login(message.data, responseMessage);
-        break;
-      }
-      case 'Register': {
-        Account.register(message.data, responseMessage);
-        break;
-      }
-      case 'ResetPassword': {
-        Account.resetPassword(message.data, responseMessage);
-        break;
-      }
-      case 'Logout': {
-        Account.logout();
-        break;
-      }
-      case 'SendEmailVerification': {
-        Account.sendEmailVerification(responseMessage);
         break;
       }
       case 'Metrics': {
@@ -170,22 +147,8 @@ class Messaging {
         port.postMessage({ type: 'Settings', data: Settings.get() });
         break;
       }
-      case 'RequestEndOfFreeTrialPopup': {
-        if (Account.showEndOfFreeTrialPopup()) {
-          port.postMessage({ type: 'InjectEndOfFreeTrialPopup' });
-        }
-        break;
-      }
       case 'MarkEndOfFreeTrialPopupAcknowledged': {
         Settings.set('endOfFreeTrialPopupAcknowledged', true);
-        break;
-      }
-      case 'RequestUserInfo': {
-        Account.sendUserInfo(responseMessage, this.updateApp);
-        break;
-      }
-      case 'UpdateUserInfo': {
-        Account.updateAndSendUserInfo(responseMessage, this.updateApp);
         break;
       }
 
@@ -270,7 +233,6 @@ class Messaging {
         log(`debugging called from TabId ${tabId}`);
         TabDetails.log();
         RequestDetails.log();
-        Account.log();
         return true;
       }
       case 'reloadTab': {

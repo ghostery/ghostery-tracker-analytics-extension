@@ -7,7 +7,6 @@
  */
 
 import Globals from './Globals';
-import Account from './Account';
 import Settings from './Settings';
 import { log } from '../utils/common';
 import { processUrlQuery } from '../utils/utils';
@@ -159,11 +158,11 @@ class Metrics {
       // Install Date
       + `&id=${encodeURIComponent(metrics.install_date)}`
       // Login state (former signed_in)
-      + `&sn=${encodeURIComponent(Account.getUserInfo().signedIn ? '1' : '0')}`
+      + '&sn=-1'
       // Recency, days since last active daily ping
       + `&rc=${encodeURIComponent(this._getRecencyActive(type, frequency).toString())}`
       // Subscription Type
-      + `&st=${encodeURIComponent(this._getSubscriptionType().toString())}`
+      + '&st=-1'
       // Active Velocity
       + `&va=${encodeURIComponent(this._getVelocityActive(type).toString())}`
       // Engaged Recency
@@ -290,18 +289,6 @@ class Metrics {
     const engaged_daily_velocity = metrics.engaged_daily_velocity || [];
     const today = this._daysSince(0);
     return engaged_daily_velocity.filter(el => el > today - 7).length;
-  }
-
-  /**
-   * Get the Subscription Type
-   * @return {string} Subscription Name
-   */
-  _getSubscriptionType() {
-    const { email, signedIn, insightsUser } = Account.getUserInfo();
-    if (!email || !signedIn || !insightsUser) {
-      return -1;
-    }
-    return 'INSIGHTS';
   }
 
   /**
