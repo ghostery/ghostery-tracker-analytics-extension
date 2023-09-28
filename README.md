@@ -1,4 +1,4 @@
-# Ghostery Tracker Analytics
+# Ghostery Tracker Analytics (formerly Ghostery Insights)
 
 ## Disclaimer
 :warning: **Tracker Analytics is no longer in development or maintenance.** :warning:
@@ -28,7 +28,7 @@ It also includes:
 
 4) **Page Latency & Size Graphs:** breaks down page elements to show what portion of a website’s overall size can be attributed to trackers in addition to other structural elements.
 5) **Global Trends Tab:** displays global privacy statistics for trackers & sites from our web-profiling database, allowing for qualitative cross comparison of domains. Data includes prevalence of the tracker across the web, what kind of tracking it does, and what types of websites it is found on.
-6) **Live/Freeze Mode:** allows you to “freeze” multiple dashboards at any point to capture and compare snapshots of tracker activity between pages.  
+6) **Live/Freeze Mode:** allows you to “freeze” multiple dashboards at any point to capture and compare snapshots of tracker activity between pages.
 7) **Export Data:** captures the raw data from the Tracker Analytics dashboard and exports in `.json` format.
 
 ## Installation
