@@ -3,8 +3,8 @@
 	"author": "Ghostery",
 	"name": "Ghostery Insights Beta",
 	"short_name": "Insights",
-	"version": "0.7.8",
-	"version_name": "0.7.8",
+	"version": "0.7.9",
+	"version_name": "0.7.9",
 	"description": "Get powerful, real-time tracker analytics. Audit trackers from one entry point to improve user experience and website performance.",
 	"icons": {
 		"16": "dist/images/logo-icons/icon16.png",
